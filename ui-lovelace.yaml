@@ -1,0 +1,4 @@
+title: My Awesome Home
+views:
+  - !include lovelace/view-cast.yaml
+  - !include lovelace/discovered-by-default.yaml

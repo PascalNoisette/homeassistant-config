@@ -14,6 +14,9 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
+lovelace:
+  mode: yaml
+
 # Example configuration.yaml entry
 #google_assistant:
 #  project_id: smarthome-4b89e 
@@ -23,4 +26,5 @@ script: !include scripts.yaml
 #  entity_config:
 #    switch.gt_9000_rf1_power_button:
 #      name: lumiere_cuisine
+#
 #

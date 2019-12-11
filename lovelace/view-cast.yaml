@@ -65,3 +65,15 @@ cards:
         entity: switch.tv_samsung_power
         tap_action:
           action: toggle
+      - type: entity-button
+        name: test
+        show_name: false
+        entity: sensor.domobox
+        tap_action:
+          action: call-service
+          service: esphome.multibridge_send_nec
+          service_data:
+              data: 0x40FFA05F
+              nbits: 32
+              repeat: 2
+        icon: mdi:format-header-1

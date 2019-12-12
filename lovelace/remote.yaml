@@ -1,0 +1,73 @@
+title: Remote
+id: remote
+path: remote
+pannel: true
+icon: mdi:remote
+cards:
+    - type: glance
+      title: TV
+      show_name: false
+      show_state: false
+      entities:
+        - type: entity-button
+          name: power
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:power
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E040BF'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: Tv Source
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:television-box
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E0D827'
+                nbits: 32
+                repeat: 2
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:numeric-1-box-outline
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E020DF'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:numeric-2-box-outline
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E0A05F'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:numeric-3-box-outline
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E0609F'
+                nbits: 32
+                repeat: 2

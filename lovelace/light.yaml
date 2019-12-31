@@ -1,0 +1,37 @@
+title: Light
+id: light
+path: light
+pannel: true
+icon: mdi:lightbulb
+cards:
+  - type: entities
+    entities:
+      - switch.gt_9000_rf1_power_button
+      - switch.gt_9000_rf2_power_button
+    title: Kitchen
+    show_header_toggle: true
+    #  - type: horizontal-stack
+    #    title: Lights
+    #    cards:
+    #      - type: entity-button
+    #        title: gt 9000 rf1 on
+    #        entity: sensor.domobox
+    #        icon: mdi:lightbulb
+    #        tap_action:
+    #          action: call-service
+    #          service: esphome.multibridge_rf_send
+    #          service_data:
+    #              data: '101100011000011101101100'
+    #              protocol: 5
+    #              pulse_length: 488
+    #      - type: entity-button
+    #        title: gt 9000 rf1 off
+    #        entity: sensor.domobox
+    #        icon: mdi:lightbulb
+    #        tap_action:
+    #          action: call-service
+    #          service: esphome.multibridge_rf_send
+    #          service_data:
+    #              data: '101110100000010001111100'
+    #              protocol: 5
+    #              pulse_length: 488

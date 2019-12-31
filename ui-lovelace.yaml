@@ -1,5 +1,7 @@
 title: My Awesome Home
 views:
-  - !include lovelace/view-cast.yaml
+        #  - !include lovelace/view-cast.yaml
   - !include lovelace/remote.yaml
+  - !include lovelace/meteo.yaml
+  - !include lovelace/light.yaml
   - !include lovelace/discovered-by-default.yaml

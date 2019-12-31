@@ -35,11 +35,6 @@ cards:
                 data: '0xE0E0807F'
                 nbits: 32
                 repeat: 2
-
-
-
-
-
         - type: entity-button
           name: Tv Source
           show_name: false
@@ -52,6 +47,42 @@ cards:
                 data: '0xE0E0D827'
                 nbits: 32
                 repeat: 2
+        - type: entity-button
+          title: Living room
+          entity: switch.hdmi_1_source_button
+          show_name: false
+          icon: mdi:format-header-1
+          tap_action:
+            action: toggle
+        - type: entity-button
+          title: Living room
+          entity: switch.hdmi_2_source_button
+          show_name: false
+          icon: mdi:format-header-2
+          tap_action:
+            action: toggle
+        - type: entity-button
+          title: Living room
+          entity: switch.hdmi_3_source_button
+          show_name: false
+          icon: mdi:format-header-3
+          tap_action:
+            action: toggle
+        - type: entity-button
+          title: Living room
+          entity: switch.hdmi_4_source_button
+          show_name: false
+          icon: mdi:format-header-4
+          tap_action:
+            action: toggle
+        - type: entity-button
+          title: Living room
+          entity: switch.hdmi_5_source_button
+          show_name: false
+          icon: mdi:format-header-5
+          tap_action:
+            action: toggle
+
     - type: horizontal-stack
       cards:
         - type: entity-button

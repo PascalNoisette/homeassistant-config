@@ -1,0 +1,9 @@
+path: meteo
+title: Meteo
+icon: mdi:weather-partly-cloudy
+badges:
+  - entity: sun.sun
+cards:
+  - type: weather-forecast
+    entity: weather.pierre_loti
+

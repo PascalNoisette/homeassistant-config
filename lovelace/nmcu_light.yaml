@@ -1,0 +1,31 @@
+title: NmcuLight
+id: nmculight
+path: nmculight
+pannel: true
+icon: mdi:lightbulb
+cards:
+  - type: horizontal-stack
+    title: Lights
+    cards:
+      - type: entity-button
+        title: gt 9000 rf1 on
+        entity: sensor.nmcu_domobox
+        icon: mdi:lightbulb
+        tap_action:
+          action: call-service
+          service: esphome.nmcu_multibridge_rf_send
+          service_data:
+              data: '101100011000011101101100'
+              protocol: 5
+              pulse_length: 488
+      - type: entity-button
+        title: gt 9000 rf1 off
+        entity: sensor.nmcu_domobox
+        icon: mdi:lightbulb
+        tap_action:
+          action: call-service
+          service: esphome.nmcu_multibridge_rf_send
+          service_data:
+              data: '101110100000010001111100'
+              protocol: 5
+              pulse_length: 488

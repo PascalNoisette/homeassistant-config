@@ -4,11 +4,22 @@ badges:
   - entity: binary_sensor.updater
   - entity: person.pascal
   - entity: sun.sun
+  - entity: sensor.domobox
+  - entity: sensor.hp_envy_5000_series_black_ink
+  - entity: sensor.hp_envy_5000_series_tri_color_ink
+  - entity: sensor.hp_envy_5000_series
+  - entity: sensor.xiron_3301_temp
+  - entity: sensor.xiron_3301_hum
+  - entity: sensor.xiron_3301_bat
 cards:
   - type: entities
     entities:
       - switch.gt_9000_rf1_power_button
       - switch.gt_9000_rf2_power_button
+      - light.maclean_582f_01
+      - light.maclean_582f_02
+      - light.maclean_582f_03
+      - light.maclean_582f_04
     title: Kitchen
     show_header_toggle: true
   - type: media-control
@@ -19,11 +30,8 @@ cards:
       - switch.hdmi_2_source_button
       - switch.tv_samsung_power
       - switch.hdmi_3_source_button
-      - switch.gt_9000_rf1_power_button_2
       - switch.hdmi_1_source_button
       - switch.hdmi_4_source_button
-      - switch.gt_9000_rf2_power_button_2
     title: Switch
   - type: weather-forecast
-    entity: weather.pierre_loti
-
+    entity: weather.home

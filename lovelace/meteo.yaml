@@ -3,7 +3,11 @@ title: Meteo
 icon: mdi:weather-partly-cloudy
 badges:
   - entity: sun.sun
+  - entity: sensor.xiron_3301_temp
+  - entity: sensor.xiron_3301_hum
+  - entity: sensor.xiron_3301_bat
+
 cards:
   - type: weather-forecast
-    entity: weather.pierre_loti
+    entity: weather.home
 

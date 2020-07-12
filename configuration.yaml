@@ -14,9 +14,32 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
+rflink:
+  port: /dev/ttyUSB0
+  ignore_devices:
+    - xiron_3301_update_time
+
 lovelace:
   mode: yaml
 
+light:
+  - platform: rflink
+    automatic_add: true
+    devices:
+      maclean_582f_01: {}
+      maclean_582f_02: {}
+      maclean_582f_03: {}
+      maclean_582f_04: {}
+sensor:
+  - platform: rflink
+    automatic_add: true
+    devices:
+      xiron_3301_temp:
+        sensor_type: temperature
+      xiron_3301_bat:
+        sensor_type: battery
+      xiron_3301_hum:
+        sensor_type: humidity
 # Example configuration.yaml entry
 #google_assistant:
 #  project_id: smarthome-4b89e 

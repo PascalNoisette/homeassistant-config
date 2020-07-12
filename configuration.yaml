@@ -18,6 +18,7 @@ rflink:
   port: /dev/ttyUSB0
   ignore_devices:
     - xiron_3301_update_time
+    - baldr_3602_update_time
 
 lovelace:
   mode: yaml
@@ -40,6 +41,13 @@ sensor:
         sensor_type: battery
       xiron_3301_hum:
         sensor_type: humidity
+      baldr_3602_temp:
+        sensor_type: temperature
+      baldr_3602_bat:
+        sensor_type: battery
+      baldr_3602_hum:
+        sensor_type: humidity
+
 # Example configuration.yaml entry
 #google_assistant:
 #  project_id: smarthome-4b89e 

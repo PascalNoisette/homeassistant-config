@@ -6,6 +6,9 @@ badges:
   - entity: sensor.xiron_3301_temp
   - entity: sensor.xiron_3301_hum
   - entity: sensor.xiron_3301_bat
+  - entity: sensor.baldr_3602_temp
+  - entity: sensor.baldr_3602_hum
+  - entity: sensor.baldr_3602_bat
 
 cards:
   - type: weather-forecast

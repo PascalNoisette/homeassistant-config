@@ -3,11 +3,7 @@ title: Meteo
 icon: mdi:weather-partly-cloudy
 badges:
   - entity: sun.sun
-  - entity: sensor.xiron_3301_temp
-  - entity: sensor.xiron_3301_hum
   - entity: sensor.xiron_3301_bat
-  - entity: sensor.baldr_3602_temp
-  - entity: sensor.baldr_3602_hum
   - entity: sensor.baldr_3602_bat
 
 cards:
@@ -19,3 +15,9 @@ cards:
     - sensor.baldr_3602_temp
     - sensor.baldr_3602_hum
     - sensor.xiron_3301_hum
+  - type: iframe
+    url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
+    aspect_ratio: 50%
+  - type: iframe
+    url: https://www.infoclimat.fr/infoclimat/vignette_vigi.php
+    aspect_ratio: 40%

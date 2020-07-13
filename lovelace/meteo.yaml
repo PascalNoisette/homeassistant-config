@@ -13,4 +13,9 @@ badges:
 cards:
   - type: weather-forecast
     entity: weather.home
-
+  - type: history-graph
+    entities:
+    - sensor.xiron_3301_temp
+    - sensor.baldr_3602_temp
+    - sensor.baldr_3602_hum
+    - sensor.xiron_3301_hum

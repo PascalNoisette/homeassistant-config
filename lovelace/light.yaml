@@ -6,10 +6,22 @@ icon: mdi:lightbulb
 cards:
   - type: entities
     entities:
-      - switch.gt_9000_rf1_power_button
-      - switch.gt_9000_rf2_power_button
+      - light.unitec_2be2_01
+      - light.unitec_2be2_02
+      - light.unitec_2be2_03
+      - light.unitec_2be2_04
+      - light.unitec_2be2_00
     title: Kitchen
     show_header_toggle: true
+  - type: entities
+    entities:
+      - light.maclean_582f_01
+      - light.maclean_582f_02
+      - light.maclean_582f_03
+      - light.maclean_582f_04
+    title: Living
+    show_header_toggle: true
+
     #  - type: horizontal-stack
     #    title: Lights
     #    cards:

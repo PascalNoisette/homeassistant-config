@@ -1,0 +1,8 @@
+path: monitoring
+title: Monitoring
+icon: mdi:laptop
+cards:
+  - type: entities
+    entities:
+      - sensor.sm_t800_battery_level
+      - sensor.sm_t800_battery_state

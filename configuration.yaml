@@ -36,6 +36,7 @@ light:
       unitec_2be2_02: {}
       unitec_2be2_03: {}
       unitec_2be2_04: {}
+      ev1527_03c652_05: {}
 sensor:
   - platform: rflink
     automatic_add: true
@@ -52,6 +53,7 @@ sensor:
         sensor_type: battery
       baldr_3602_hum:
         sensor_type: humidity
+
 
 # Example configuration.yaml entry
 #google_assistant:

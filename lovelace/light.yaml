@@ -6,44 +6,17 @@ icon: mdi:lightbulb
 cards:
   - type: entities
     entities:
-      - light.unitec_2be2_01
-      - light.unitec_2be2_02
-      - light.unitec_2be2_03
-      - light.unitec_2be2_04
-      - light.unitec_2be2_00
-    title: Kitchen
-    show_header_toggle: true
-  - type: entities
-    entities:
       - light.maclean_582f_01
       - light.maclean_582f_02
       - light.maclean_582f_03
       - light.maclean_582f_04
     title: Living
     show_header_toggle: true
-
-    #  - type: horizontal-stack
-    #    title: Lights
-    #    cards:
-    #      - type: entity-button
-    #        title: gt 9000 rf1 on
-    #        entity: sensor.domobox
-    #        icon: mdi:lightbulb
-    #        tap_action:
-    #          action: call-service
-    #          service: esphome.multibridge_rf_send
-    #          service_data:
-    #              data: '101100011000011101101100'
-    #              protocol: 5
-    #              pulse_length: 488
-    #      - type: entity-button
-    #        title: gt 9000 rf1 off
-    #        entity: sensor.domobox
-    #        icon: mdi:lightbulb
-    #        tap_action:
-    #          action: call-service
-    #          service: esphome.multibridge_rf_send
-    #          service_data:
-    #              data: '101110100000010001111100'
-    #              protocol: 5
-    #              pulse_length: 488
+  - type: entities
+    entities:
+      - light.unitec_2be2_00
+      - light.unitec_2be2_01
+      - light.unitec_2be2_02
+      - light.unitec_2be2_03
+      - light.unitec_2be2_04
+    title: Kitchen

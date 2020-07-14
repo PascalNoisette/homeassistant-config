@@ -24,7 +24,11 @@ cards:
     #aspect_ratio: 40%
   - type: history-graph
     entities:
-    - sensor.xiron_3301_temp
-    - sensor.baldr_3602_temp
-    - sensor.baldr_3602_hum
-    - sensor.xiron_3301_hum
+    - entity: sensor.xiron_3301_temp
+      name: Exterieur
+    - entity: sensor.baldr_3602_temp
+      name: Interieur
+    - entity: sensor.baldr_3602_hum
+      name: Interieur
+    - entity: sensor.xiron_3301_hum
+      name: Exterieur

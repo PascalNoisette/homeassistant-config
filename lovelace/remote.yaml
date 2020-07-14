@@ -58,21 +58,24 @@ cards:
           title: Living room
           entity: switch.hdmi_2_source_button
           show_name: false
-          icon: mdi:format-header-2
+          #icon: mdi:format-header-2
+          icon: mdi:google-chrome
           tap_action:
             action: toggle
         - type: entity-button
           title: Living room
           entity: switch.hdmi_3_source_button
           show_name: false
-          icon: mdi:format-header-3
+          #icon: mdi:format-header-3
+          icon: mdi:laptop
           tap_action:
             action: toggle
         - type: entity-button
           title: Living room
           entity: switch.hdmi_4_source_button
           show_name: false
-          icon: mdi:format-header-4
+          #icon: mdi:format-header-4
+          icon: mdi:gamepad-square-outline
           tap_action:
             action: toggle
         - type: entity-button
@@ -82,6 +85,95 @@ cards:
           icon: mdi:format-header-5
           tap_action:
             action: toggle
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          show_icon: false
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:arrow-up
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E006F9'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          show_icon: false
+
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:arrow-left
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E0A659'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:check
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E016E9'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:arrow-right
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E046B9'
+                nbits: 32
+                repeat: 2
+
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          show_icon: false
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:arrow-down
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_samsung
+            service_data:
+                data: '0xE0E08679'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.domobox
+          show_icon: false
+
 
     - type: horizontal-stack
       cards:

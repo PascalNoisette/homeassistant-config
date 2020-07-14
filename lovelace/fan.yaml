@@ -1,0 +1,51 @@
+title: Fan
+id: fan
+path: fan
+pannel: true
+icon: mdi:fan
+cards:
+  - type: vertical-stack
+    cards:
+    - type: glance
+      title: Clim
+      show_name: false
+      show_state: false
+      entities:
+        - type: entity-button
+          name: power
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:power
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_nec
+            service_data:
+                data: '0x4FB40BF'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: snowflake
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:snowflake
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_nec
+            service_data:
+                data: '0x4FB906F'
+                nbits: 32
+                repeat: 2
+        - type: entity-button
+          name: sync
+          show_name: false
+          entity: sensor.domobox
+          icon: mdi:sync
+          tap_action:
+            action: call-service
+            service: esphome.multibridge_send_nec
+            service_data:
+                data: '0x4FB48B7'
+                nbits: 32
+                repeat: 2
+
+

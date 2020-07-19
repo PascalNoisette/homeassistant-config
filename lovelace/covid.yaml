@@ -1,0 +1,8 @@
+path: covid
+title: Covid
+icon: mdi:biohazard
+panel: true
+cards:
+  - type: iframe
+    url: https://mapthenews.maps.arcgis.com/apps/opsdashboard/index.html#/5df19abcf8714bc590a3b143e14a548c
+    aspect_ratio: 100%

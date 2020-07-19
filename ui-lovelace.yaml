@@ -2,5 +2,6 @@ title: My Awesome Home
 views:
   - !include lovelace/remote.yaml
   - !include lovelace/meteo.yaml
+  - !include lovelace/covid.yaml
   - !include lovelace/light.yaml
   - !include lovelace/monitoring.yaml

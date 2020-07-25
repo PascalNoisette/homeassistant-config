@@ -18,12 +18,6 @@ badges:
 cards:
   - type: weather-forecast
     entity: weather.home
-  - type: entity-filter
-    entities:
-      - entity: light.ev1527_03c652_05
-        name: Verifier les plantes
-    state_filter:
-      - "on"
   - type: iframe
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%

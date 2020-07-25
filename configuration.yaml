@@ -61,9 +61,11 @@ binary_sensor:
   - platform: rflink
     devices:
       ev1527_082b13_06:
-        off_delay: 15
+        off_delay: 60
         device_class: door
-      ev1527_03c652_05: {}
+      ev1527_03c652_05: 
+        off_delay: 150
+        device_class: moisture
       chuango_9b7539_02:
         device_class: smoke
         off_delay: 150

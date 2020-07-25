@@ -10,4 +10,6 @@ cards:
         name: Porte
       - entity: binary_sensor.chuango_9b7539_02
         name: Fumée
+      - entity: binary_sensor.ev1527_03c652_05
+        name: Fuite
 

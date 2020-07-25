@@ -6,3 +6,5 @@ cards:
     entities:
       - sensor.sm_t800_battery_level
       - sensor.sm_t800_battery_state
+      - entity: binary_sensor.ev1527_082b13_06
+        name: Porte

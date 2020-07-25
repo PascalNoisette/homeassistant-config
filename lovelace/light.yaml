@@ -15,13 +15,11 @@ cards:
         name: Canape
     title: Living
     show_header_toggle: true
+
   - type: entities
     entities:
-            #- light.unitec_2be2_00
       - entity: light.unitec_2be2_01
         name: Kitchen table
       - entity: light.unitec_2be2_02
         name: Couloir
-        #- light.unitec_2be2_03
-        #- light.unitec_2be2_04
     title: Kitchen

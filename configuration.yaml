@@ -36,7 +36,10 @@ light:
       unitec_2be2_02: {}
       unitec_2be2_03: {}
       unitec_2be2_04: {}
-      ev1527_03c652_05: {}
+      newkaku_0000c6c2_1:
+        type: hybrid
+      newkaku_02a48800_2:
+        type: hybrid
 sensor:
   - platform: rflink
     automatic_add: true
@@ -54,6 +57,19 @@ sensor:
       baldr_3602_hum:
         sensor_type: humidity
 
+binary_sensor:
+  - platform: rflink
+    devices:
+      ev1527_082b13_06:
+        off_delay: 15
+        device_class: door
+      ev1527_03c652_05: {}
+
+logger:
+  default: error
+  logs:
+    rflink: debug
+    homeassistant.components.rflink: debug
 
 # Example configuration.yaml entry
 #google_assistant:

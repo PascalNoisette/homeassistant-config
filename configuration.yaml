@@ -64,7 +64,9 @@ binary_sensor:
         off_delay: 15
         device_class: door
       ev1527_03c652_05: {}
-
+      chuango_9b7539_02:
+        device_class: smoke
+        off_delay: 150
 logger:
   default: error
   logs:

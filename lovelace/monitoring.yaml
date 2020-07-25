@@ -8,3 +8,6 @@ cards:
       - sensor.sm_t800_battery_state
       - entity: binary_sensor.ev1527_082b13_06
         name: Porte
+      - entity: binary_sensor.chuango_9b7539_02
+        name: Fumée
+

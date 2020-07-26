@@ -9,6 +9,9 @@ badges:
     entities:
       - entity: sensor.xiron_3301_bat
       - entity: sensor.baldr_3602_bat
+      - entity: sensor.air_pressure_template
+      - entity: sensor.bordeaux_uv
+      - entity: sensor.bordeaux_weather_alert
     state_filter:
       - operator: "!="      
         value: "ok"
@@ -17,18 +20,13 @@ badges:
 
 cards:
   - type: weather-forecast
-    entity: weather.home
+    entity: weather.bordeaux
   - type: iframe
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%
   - type: iframe
     url: https://www.atmo-nouvelleaquitaine.org/widget/monair/commune/33063
     aspect_ratio: 85%
-  - type: picture
-    image: http://vigilance.meteofrance.com/data/QGFR17_LFPW_.gif
-    tap_action:
-      action: url
-      url_path: https://vigilance.meteofrance.fr/fr/gironde
   - type: picture
     image: https://www.pollens.fr/generated/vigilance_map.png
     title: Pollen
@@ -48,3 +46,4 @@ cards:
       name: Interieur
     - entity: sensor.xiron_3301_hum
       name: Exterieur
+    - entity: sensor.air_pressure_template

@@ -1,1 +1,37 @@
-[]
+#automation:
+- alias: Arriving home
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_082b13_06
+    to: 'on'
+  action:
+    service: notify.notify
+    data:
+      title: "Porte"
+      message: "La porte s'est ouverte"
+
+
+- alias: Smoke
+  trigger:
+    platform: state
+    entity_id: binary_sensor.chuango_9b7539_02
+    to: 'on'
+  action:
+    service: notify.notify
+    data:
+      title: "Fumée"
+      message: "Le detecteur indique de la fumée"
+
+
+- alias: Water
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_03c652_05
+    to: 'on'
+  action:
+    service: notify.notify
+    data:
+      title: "Fuite"
+      message: "Le detecteur indique de l'humiditée"
+
+

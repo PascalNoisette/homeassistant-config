@@ -564,3 +564,6 @@ cards:
                 data: '0x9B289669'
                 nbits: 32
                 repeat: 2
+  - type: media-control
+    entity: media_player.chromecast1919
+

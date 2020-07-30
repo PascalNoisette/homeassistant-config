@@ -47,3 +47,5 @@ cards:
     - entity: sensor.xiron_3301_hum
       name: Exterieur
     - entity: sensor.air_pressure_template
+    - sensor.xiron_3301_delta
+    - sensor.baldr_3602_delta

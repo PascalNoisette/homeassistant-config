@@ -62,24 +62,59 @@ sensor:
         friendly_name: 'Air Pressure'
         value_template: "{{ state_attr('weather.home','pressure') | default('1013') }}"
         unit_of_measurement: hPa
-  
+  - platform: derivative
+    source: sensor.xiron_3301_temp
+    name: xiron_3301_delta
+    round: 1
+    unit: 'Celsius'
+    time_window: "00:15:00"
+
+  - platform: derivative
+    source: sensor.baldr_3602_temp
+    name: baldr_3602_delta
+    round: 1
+    unit: 'Celsius'
+    time_window: "00:30:00"
+
+
 binary_sensor:
   - platform: rflink
     devices:
       ev1527_082b13_06:
-        off_delay: 60
         device_class: door
+        off_delay: 60
       ev1527_03c652_05: 
         off_delay: 150
         device_class: moisture
       chuango_9b7539_02:
         device_class: smoke
         off_delay: 150
+      eurodomest_0c20ef_02:
+        device_class: motion
+        force_update: true
+      eurodomest_2c20ef_05:
+        device_class: motion
+        force_update: true
+  - platform: template
+    sensors:
+      front_door_motion:
+        device_class: motion
+        value_template: "{{ is_state('input_boolean.front_door_motion', 'on') }}"
+
+input_boolean: 
+  front_door_motion:
+    name: Mouvement à l'entrée
+  engage_alarm:
+    name: Alame enclenchée
+
+
 logger:
   default: error
   logs:
     rflink: debug
     homeassistant.components.rflink: debug
+
+media_extractor:
 
 # Example configuration.yaml entry
 #google_assistant:

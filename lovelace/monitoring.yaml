@@ -6,10 +6,9 @@ cards:
     entities:
       - sensor.sm_t800_battery_level
       - sensor.sm_t800_battery_state
-      - entity: binary_sensor.ev1527_082b13_06
-        name: Porte
-      - entity: binary_sensor.chuango_9b7539_02
-        name: Fumée
-      - entity: binary_sensor.ev1527_03c652_05
-        name: Fuite
-
+      - sensor.e5823_battery_level
+      - sensor.e5823_battery_state
+      - sensor.e5823_geocoded_location
+      - sensor.e5823_wifi_connection
+      - sensor.hp_envy_5000_series_black_ink
+      - sensor.hp_envy_5000_series_tri_color_ink

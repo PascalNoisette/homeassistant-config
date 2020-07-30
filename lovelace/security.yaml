@@ -1,0 +1,17 @@
+path: security
+title: Security
+icon: mdi:shield-account
+cards:
+  - type: entities
+    entities:
+      - entity: binary_sensor.chuango_9b7539_02
+        name: Fumée
+      - entity: binary_sensor.ev1527_03c652_05
+        name: Fuite
+      - entity: binary_sensor.front_door_motion
+        name: Mouvement à l'entrée
+      - entity: binary_sensor.ev1527_082b13_06
+        name: Porte
+      - entity: input_boolean.engage_alarm
+        name: Alarme
+

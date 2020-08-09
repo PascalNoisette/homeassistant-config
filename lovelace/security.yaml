@@ -3,6 +3,7 @@ title: Security
 icon: mdi:shield-account
 cards:
   - type: entities
+    show_header_toggle: false
     entities:
       - entity: binary_sensor.chuango_9b7539_02
         name: Fumée
@@ -10,8 +11,11 @@ cards:
         name: Fuite
       - entity: binary_sensor.front_door_motion
         name: Mouvement à l'entrée
+      - entity: light.eurodomest_23bb15_00
+        icon: mdi:door
+        type: custom:hui-text-entity-row
+        name: Frigo
       - entity: binary_sensor.ev1527_082b13_06
         name: Porte
       - entity: input_boolean.engage_alarm
         name: Alarme
-

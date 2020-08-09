@@ -12,3 +12,7 @@ cards:
       - sensor.e5823_wifi_connection
       - sensor.hp_envy_5000_series_black_ink
       - sensor.hp_envy_5000_series_tri_color_ink
+      - sensor.bbox_currently_used_download_bandwidth
+      - sensor.bbox_currently_used_upload_bandwidth
+      - sensor.bbox_uptime
+

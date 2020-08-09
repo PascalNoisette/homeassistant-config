@@ -10,8 +10,8 @@ badges:
       - entity: sensor.xiron_3301_bat
       - entity: sensor.baldr_3602_bat
       - entity: sensor.air_pressure_template
-      - entity: sensor.bordeaux_uv
-      - entity: sensor.bordeaux_weather_alert
+        #- entity: sensor.bordeaux_uv
+        #- entity: sensor.bordeaux_weather_alert
     state_filter:
       - operator: "!="      
         value: "ok"
@@ -19,8 +19,11 @@ badges:
     name: Interieur
 
 cards:
-  - type: weather-forecast
-    entity: weather.bordeaux
+        #  - type: weather-forecast
+        #    entity: weather.bordeaux
+  - type: iframe
+    url: https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance
+    aspect_ratio: 27%
   - type: iframe
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%
@@ -47,5 +50,6 @@ cards:
     - entity: sensor.xiron_3301_hum
       name: Exterieur
     - entity: sensor.air_pressure_template
-    - sensor.xiron_3301_delta
-    - sensor.baldr_3602_delta
+    - sensor.xiron_3301_delta_avg
+    - sensor.baldr_3602_delta_avg
+

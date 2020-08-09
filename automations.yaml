@@ -5,10 +5,6 @@
     entity_id: binary_sensor.ev1527_082b13_06
     to: 'on'
   action:
-    - service: notify.notify
-      data:
-        title: "Porte"
-        message: "La porte s'est ouverte"
     - service: persistent_notification.create
       data:
         title: "Porte"
@@ -33,6 +29,24 @@
       data:
         media_content_id: "https://www.youtube.com/watch?v=b0kib2o4hmA"
         media_content_type: video/youtube
+
+- alias: Signaux Alternatif (On) frigo
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_0c44ea_0e
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.eurodomest_23bb15_00
+
+- alias: Signaux Alternatif (Off) frigo
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_0c44ea_07
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.eurodomest_23bb15_00
 
 
 - alias: Motion at front door

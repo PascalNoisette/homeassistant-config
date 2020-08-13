@@ -19,6 +19,7 @@ rflink:
   ignore_devices:
     - xiron_3301_update_time
     - baldr_3602_update_time
+    - baldr_b301_update_time
 
 device_tracker:
   - platform: bbox
@@ -63,6 +64,12 @@ sensor:
         sensor_type: battery
       baldr_3602_hum:
         sensor_type: humidity
+      baldr_b301_temp:
+        sensor_type: temperature
+      baldr_b301_hum:
+        sensor_type: humidity
+      baldr_b301_bat:
+        sensor_type: battery
   - platform: template
     sensors:
       air_pressure_template:

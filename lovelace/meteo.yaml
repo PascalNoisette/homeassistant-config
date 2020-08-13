@@ -5,25 +5,32 @@ badges:
   - entity: sun.sun
   - entity: sensor.xiron_3301_temp
     name: Exterieur
+  - entity: sensor.baldr_b301_temp
+    name: Interieur
+  - entity: sensor.air_pressure_template
+  - entity: sensor.bordeaux_uv_2
   - type: entity-filter
     entities:
       - entity: sensor.xiron_3301_bat
       - entity: sensor.baldr_3602_bat
-      - entity: sensor.air_pressure_template
-        #- entity: sensor.bordeaux_uv
-        #- entity: sensor.bordeaux_weather_alert
+      - entity: sensor.baldr_b301_bat
     state_filter:
       - operator: "!="      
         value: "ok"
-  - entity: sensor.baldr_3602_temp
-    name: Interieur
+  - type: entity-filter
+    entities:
+      - entity: sensor.33_weather_alert
+    state_filter:
+      - operator: "!="
+        value: "Vert"
+
 
 cards:
-        #  - type: weather-forecast
-        #    entity: weather.bordeaux
-  - type: iframe
-    url: https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance
-    aspect_ratio: 27%
+  - type: weather-forecast
+    entity: weather.bordeaux_2
+    #- type: iframe
+    #  url: https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance
+    #  aspect_ratio: 27%
   - type: iframe
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%
@@ -45,10 +52,14 @@ cards:
       name: Exterieur
     - entity: sensor.baldr_3602_temp
       name: Interieur
+    - entity: sensor.baldr_b301_temp
+      name: Baldr Interieur
     - entity: sensor.baldr_3602_hum
       name: Interieur
     - entity: sensor.xiron_3301_hum
       name: Exterieur
+    - entity: sensor.baldr_b301_hum
+      name: Baldr Interieur
     - entity: sensor.air_pressure_template
     - sensor.xiron_3301_delta_avg
     - sensor.baldr_3602_delta_avg

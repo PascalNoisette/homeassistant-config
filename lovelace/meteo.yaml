@@ -3,20 +3,12 @@ title: Meteo
 icon: mdi:weather-partly-cloudy
 badges:
   - entity: sun.sun
-  - entity: sensor.xiron_3301_temp
+  - entity: sensor.baldr_3602_temp
     name: Exterieur
   - entity: sensor.baldr_b301_temp
     name: Interieur
   - entity: sensor.air_pressure_template
   - entity: sensor.bordeaux_uv_2
-  - type: entity-filter
-    entities:
-      - entity: sensor.xiron_3301_bat
-      - entity: sensor.baldr_3602_bat
-      - entity: sensor.baldr_b301_bat
-    state_filter:
-      - operator: "!="      
-        value: "ok"
   - type: entity-filter
     entities:
       - entity: sensor.33_weather_alert
@@ -48,19 +40,17 @@ cards:
     #aspect_ratio: 40%
   - type: history-graph
     entities:
-    - entity: sensor.xiron_3301_temp
-      name: Exterieur
     - entity: sensor.baldr_3602_temp
-      name: Interieur
+      name: Exterieur
     - entity: sensor.baldr_b301_temp
-      name: Baldr Interieur
-    - entity: sensor.baldr_3602_hum
       name: Interieur
-    - entity: sensor.xiron_3301_hum
+    - entity: sensor.baldr_3602_hum
       name: Exterieur
     - entity: sensor.baldr_b301_hum
-      name: Baldr Interieur
+      name: Interieur
     - entity: sensor.air_pressure_template
-    - sensor.xiron_3301_delta_avg
+    - sensor.baldr_b301_delta_avg
     - sensor.baldr_3602_delta_avg
+    - entity: sensor.bordeaux_temperature
+      name: Météo France
 

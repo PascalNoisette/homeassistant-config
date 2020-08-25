@@ -1,6 +1,16 @@
 path: security
 title: Security
 icon: mdi:shield-account
+badges:
+  - type: entity-filter
+    entities:
+      - entity: sensor.baldr_3602_bat
+      - entity: sensor.baldr_b301_bat
+      - entity: sensor.xiron_3301_bat
+    state_filter:
+      - operator: "!="
+        value: "ok"
+
 cards:
   - type: entities
     show_header_toggle: false
@@ -11,9 +21,7 @@ cards:
         name: Fuite
       - entity: binary_sensor.front_door_motion
         name: Mouvement à l'entrée
-      - entity: light.eurodomest_23bb15_00
-        icon: mdi:door
-        type: custom:hui-text-entity-row
+      - entity: sensor.xiron_3301_temp
         name: Frigo
       - entity: binary_sensor.ev1527_082b13_06
         name: Porte

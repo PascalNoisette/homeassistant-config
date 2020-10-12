@@ -42,13 +42,26 @@ cards:
     entities:
     - entity: sensor.baldr_3602_temp
       name: Exterieur
-    - entity: sensor.baldr_b301_temp
-      name: Interieur
     - entity: sensor.baldr_3602_hum
       name: Exterieur
+    - entity: sensor.baldr_b301_temp
+      name: Interieur
     - entity: sensor.baldr_b301_hum
       name: Interieur
+    - entity: sensor.xiron_6f01_temp
+      name: Lidl1
+    - entity: sensor.xiron_6f01_hum
+      name: Lidl1
+    - entity: sensor.xiron_0102_hum
+      name: Lidl2
+    - entity: sensor.xiron_0102_temp
+      name: Lidl2
+    - entity: sensor.xiron_1e03_temp
+      name: Lidl3
+    - entity: sensor.baldr_1e03_hum
+      name: Lidl3
     - entity: sensor.air_pressure_template
+    - entity: sensor.e6683_pressure_sensor
     - sensor.baldr_b301_delta_avg
     - sensor.baldr_3602_delta_avg
     - entity: sensor.bordeaux_temperature

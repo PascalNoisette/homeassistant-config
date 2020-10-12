@@ -7,6 +7,9 @@ badges:
       - entity: sensor.baldr_3602_bat
       - entity: sensor.baldr_b301_bat
       - entity: sensor.xiron_3301_bat
+      - entity: sensor.xiron_6f01_bat
+      - entity: sensor.xiron_0102_bat
+      - entity: sensor.xiron_1e03_bat
     state_filter:
       - operator: "!="
         value: "ok"

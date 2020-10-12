@@ -6,10 +6,14 @@ cards:
     entities:
       - sensor.sm_t800_battery_level
       - sensor.sm_t800_battery_state
-      - sensor.e5823_battery_level
-      - sensor.e5823_battery_state
-      - sensor.e5823_geocoded_location
-      - sensor.e5823_wifi_connection
+        #      - sensor.e5823_battery_level
+        #      - sensor.e5823_battery_state
+        #      - sensor.e5823_geocoded_location
+        #      - sensor.e5823_wifi_connection
+      - sensor.h8324_niveau_de_batterie
+      - sensor.h8324_etat_de_la_batterie
+      - sensor.h8324_lieu_geocode
+      - sensor.h8324_connexion_wi_fi
       - sensor.hp_envy_5000_series_black_ink
       - sensor.hp_envy_5000_series_tri_color_ink
       - sensor.bbox_currently_used_download_bandwidth

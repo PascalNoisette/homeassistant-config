@@ -1,15 +1,4 @@
 #automation:
-- alias: Arriving home
-  trigger:
-    platform: state
-    entity_id: binary_sensor.ev1527_082b13_06
-    to: 'on'
-  action:
-    - service: persistent_notification.create
-      data:
-        title: "Porte"
-        message: "La porte s'est ouverte"
-
 - alias: Hand made alarm
   trigger:
     platform: state

@@ -13,6 +13,12 @@ badges:
     state_filter:
       - operator: "!="
         value: "ok"
+  - type: entity-filter
+    entities:
+      - entity: sensor.lumi_lumi_sensor_magnet_aq2_ffd93f05_power
+    state_filter:
+      - operator: "<"
+        value: 30
 
 cards:
   - type: entities
@@ -27,6 +33,8 @@ cards:
       - entity: sensor.xiron_3301_temp
         name: Frigo
       - entity: binary_sensor.ev1527_082b13_06
+        name: Porte
+      - entity: binary_sensor.lumi_lumi_sensor_magnet_aq2_ffd93f05_on_off
         name: Porte
       - entity: input_boolean.engage_alarm
         name: Alarme

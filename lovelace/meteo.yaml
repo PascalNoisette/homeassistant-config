@@ -45,23 +45,22 @@ cards:
     - entity: sensor.baldr_3602_hum
       name: Exterieur
     - entity: sensor.baldr_b301_temp
-      name: Interieur
+      name: Salon
     - entity: sensor.baldr_b301_hum
-      name: Interieur
+      name: Salon
     - entity: sensor.xiron_6f01_temp
-      name: Lidl1
+      name: Terrasse
     - entity: sensor.xiron_6f01_hum
-      name: Lidl1
+      name: Terrasse
     - entity: sensor.xiron_0102_hum
-      name: Lidl2
+      name: Cuisine
     - entity: sensor.xiron_0102_temp
-      name: Lidl2
+      name: Cuisine
     - entity: sensor.xiron_1e03_temp
-      name: Lidl3
-    - entity: sensor.baldr_1e03_hum
-      name: Lidl3
+      name: Canape
+    - entity: sensor.xiron_1e03_hum
+      name: Canape
     - entity: sensor.air_pressure_template
-    - entity: sensor.e6683_pressure_sensor
     - sensor.baldr_b301_delta_avg
     - sensor.baldr_3602_delta_avg
     - entity: sensor.bordeaux_temperature

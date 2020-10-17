@@ -173,9 +173,9 @@ input_boolean:
 
 logger:
   default: error
-  logs:
-    rflink: debug
-    homeassistant.components.rflink: debug
+  #  logs:
+  #    rflink: debug
+  #    homeassistant.components.rflink: debug
 
 media_extractor:
 

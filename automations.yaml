@@ -1,4 +1,77 @@
 #automation:
+- alias: 'Toggle lamp Gauche'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: transmitter_2_gang
+      event: 1002
+  action:
+    - service: light.toggle
+      entity_id: light.maclean_582f_01
+    - service: light.toggle
+      entity_id: light.maclean_582f_02
+    - service: light.toggle
+      entity_id: light.maclean_582f_03
+    - service: light.toggle
+      entity_id: light.maclean_582f_04
+
+- alias: 'Toggle lamp Droite'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: transmitter_2_gang
+      event: 2002
+  action:
+    - service: light.toggle
+      entity_id: light.unitec_2be2_01
+    - service: light.toggle
+      entity_id: light.unitec_2be2_02
+    - service: light.toggle
+      entity_id: light.unitec_2be2_03
+    - service: light.toggle
+      entity_id: light.unitec_2be2_04
+
+- alias: 'Toggle lamp Gauche Gauche'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: transmitter_2_gang
+      event: 1004
+  action:
+    - service: switch.turn_off
+      entity_id: light.maclean_582f_01
+    - service: switch.turn_off
+      entity_id: light.maclean_582f_02
+    - service: switch.turn_off
+      entity_id: light.maclean_582f_03
+    - service: switch.turn_off
+      entity_id: light.maclean_582f_04
+
+- alias: 'Toggle lamp Droite Droite'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: transmitter_2_gang
+      event: 2004
+  action:
+    - service: switch.turn_off
+      entity_id: light.unitec_2be2_01
+    - service: switch.turn_off
+      entity_id: light.unitec_2be2_02
+    - service: switch.turn_off
+      entity_id: light.unitec_2be2_03
+    - service: switch.turn_off
+      entity_id: light.unitec_2be2_04
+
+
 - alias: Hand made alarm
   trigger:
     platform: state

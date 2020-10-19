@@ -11,8 +11,10 @@ cards:
         name: Bedroom
       - entity: light.maclean_582f_03
         name: Desk
-      - entity: light.maclean_582f_04
+      - entity: light.dimmable_light_2
         name: Canape
+      - entity: light.dimmable_light_3
+        name: Living
     title: Living
     show_header_toggle: true
 

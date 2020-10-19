@@ -20,3 +20,31 @@ cards:
       - sensor.bbox_currently_used_upload_bandwidth
       - sensor.bbox_uptime
 
+  - type: glance
+    title: Disk
+    entities:
+    - entity: sensor.first_etc_hosts_used_percent
+    - entity: sensor.second_etc_hosts_used_percent
+    - entity: sensor.third_etc_hosts_used_percent
+    - entity: sensor.frontend_used_percent
+    - entity: sensor.matrix_etc_hosts_used_percent
+    - entity: sensor.gateway_media_saumon_used_percent
+    - entity: sensor.jitsi_etc_hosts_used_percent
+    - entity: sensor.gateway_used_percent
+
+  - type: history-graph
+    title: Swap
+    entities:
+    - entity: sensor.gateway_swap_used_percent
+    - entity: sensor.gateway_ram_used_percent
+
+  - type: history-graph
+    title: Ram
+    entities:
+    - entity: sensor.first_containers_ram_used
+    - entity: sensor.second_containers_ram_used
+    - entity: sensor.third_containers_ram_used
+    - entity: sensor.matrix_containers_ram_used
+    - entity: sensor.jitsi_containers_ram_used
+
+

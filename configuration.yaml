@@ -26,6 +26,21 @@ rflink:
 device_tracker:
   - platform: bbox
 
+glances:
+  - host: 127.0.0.1
+    name: first
+  - host: second
+    name: second
+  - host: third
+    name: third
+  - host: matrix
+    name: matrix
+  - host: jitsi
+    name: jitsi
+  - host: frontend
+    name: frontend
+  - host: 10.249.107.1
+    name: gateway
 
 lovelace:
   mode: yaml

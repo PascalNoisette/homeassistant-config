@@ -23,6 +23,9 @@ cards:
     #- type: iframe
     #  url: https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance
     #  aspect_ratio: 27%
+  - type: entities
+    entities:
+      - entity: sensor.bordeaux_next_rain_2
   - type: iframe
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%

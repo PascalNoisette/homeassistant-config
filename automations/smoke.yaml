@@ -1,0 +1,15 @@
+- alias: Smoke
+  trigger:
+    platform: state
+    entity_id: binary_sensor.chuango_9b7539_02
+    to: 'on'
+  action:
+    - service: notify.notify
+      data:
+        title: "Fumée"
+        message: "Le detecteur indique de la fumée"
+    - service: persistent_notification.create
+      data:
+        title: "Fumée"
+        message: "Le detecteur indique de la fumée"
+

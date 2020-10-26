@@ -1,0 +1,21 @@
+- alias: 'Toggle lamp Turn OFF Tradfri'
+  initial_state: 'on'
+  trigger:
+    - platform: event                                                                                                                                                               
+      event_type: deconz_event                                                                                                                                                      
+      event_data:                                                                                                                                                                   
+        id: tradfri_on_off_switch
+        event: 2002  
+  action:
+    - service: light.turn_off
+      entity_id: light.dimmable_light_2
+    - service: light.turn_off                                                                                                                                                       
+      entity_id: light.dimmable_light_3 
+    - service: light.turn_off
+      entity_id: light.maclean_582f_02
+    - service: light.turn_off
+      entity_id: light.maclean_582f_03
+    - service: light.turn_off
+      entity_id: light.unitec_2be2_01
+    - service: light.turn_off
+      entity_id: light.unitec_2be2_02

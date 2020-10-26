@@ -1,0 +1,24 @@
+- alias: Motion at front door
+  trigger:
+    platform: state
+    entity_id: binary_sensor.eurodomest_0c20ef_02, binary_sensor.eurodomest_2c20ef_05
+  condition:
+    condition: state
+    entity_id: input_boolean.front_door_motion
+    state: 'off'
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.front_door_motion
+
+- alias: Reset motion counter
+  trigger:
+    platform: state
+    entity_id: binary_sensor.front_door_motion
+    to: 'on'
+  action:
+    - delay:
+        minutes: 1
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.front_door_motion
+

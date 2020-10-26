@@ -1,0 +1,20 @@
+- alias: Hand made alarm
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_082b13_06, binary_sensor.eurodomest_0c20ef_02, binary_sensor.eurodomest_2c20ef_05
+  condition:
+    condition: state
+    entity_id: input_boolean.engage_alarm
+    state: 'on'
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.engage_alarm
+    - service: switch.turn_on
+      entity_id: switch.hdmi_2_source_button
+    - service: media_extractor.play_media
+      entity_id: media_player.chromecast1919
+      data:
+        media_content_id: "https://www.youtube.com/watch?v=b0kib2o4hmA"
+        media_content_type: video/youtube
+

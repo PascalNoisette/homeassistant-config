@@ -1,0 +1,13 @@
+- alias: 'Toggle lamp Droite Droite'
+  initial_state: 'on'
+  trigger:
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: transmitter_2_gang
+        event: 2004
+  action:
+    - service: light.turn_off
+      entity_id: light.unitec_2be2_01
+    - service: light.turn_off
+      entity_id: light.unitec_2be2_02

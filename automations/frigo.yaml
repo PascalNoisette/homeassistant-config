@@ -1,0 +1,15 @@
+- alias: Frigo
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.xiron_3301_temp
+    above: 15
+  action:
+    - service: notify.notify
+      data:
+        title: "Frigo"
+        message: "La temperature du frigo est de {{ states('sensor.xiron_3301_temp') }}"
+    - service: persistent_notification.create
+      data:
+        title: "Frigo"
+        message: "La temperature du frigo est de {{ states('sensor.xiron_3301_temp') }}"
+

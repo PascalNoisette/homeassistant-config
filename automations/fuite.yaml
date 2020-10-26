@@ -1,0 +1,22 @@
+- alias: Water
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ev1527_03c652_05
+    to: 'on'
+  action:
+    - service: notify.notify
+      data:
+        title: "Fuite"
+        message: "Le detecteur indique de l'humiditée"
+    - service: persistent_notification.create
+      data:
+        title: "Fuite"
+        message: "Le detecteur indique de l'humiditée"
+    - service: switch.turn_on
+      entity_id: switch.hdmi_2_source_button
+    - service: media_extractor.play_media
+      entity_id: media_player.chromecast1919
+      data:
+        media_content_id: "http://www.haute-garonne.gouv.fr/content/download/23659/166500/file/Corne%20de%20brume.mp3"
+        media_content_type: 'audio/mp3'
+

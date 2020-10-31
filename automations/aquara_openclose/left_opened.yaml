@@ -1,0 +1,22 @@
+- alias: Porte restee ouverte
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_4
+      to: 'on'
+      for:
+        minutes: 3 
+    - platform: state
+      entity_id: binary_sensor.openclose_7
+      to: 'on'
+      for:
+        minutes: 2
+  action:
+    - service: notify.notify
+      data:
+        title: "Porte ouverte"
+        message: "Le detecteur {{ trigger.to_state.name }} est reste ouvert depuis plus de {{ trigger.for }} minutes"
+    - service: persistent_notification.create
+      data:
+        title: "Porte ouverte"
+        message: "Le detecteur {{ trigger.to_state.name }} est reste ouvert depuis plus de  {{ trigger.for }} minutes"
+

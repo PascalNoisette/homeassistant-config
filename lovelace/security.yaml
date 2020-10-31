@@ -53,3 +53,10 @@ cards:
         name: Fenetre Droite
       - entity: input_boolean.engage_alarm
         name: Alarme
+  - type: glance
+    show_header_toggle: false
+    entities:
+      - entity: switch.print_attestation
+        name: Print Attestation
+        icon: mdi:printer
+        show_state: true

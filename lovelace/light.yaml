@@ -6,7 +6,6 @@ icon: mdi:lightbulb
 cards:
   - type: entities
     entities:
-            #- light.maclean_582f_01
       - entity: light.maclean_582f_02
         name: Bedroom
       - entity: light.maclean_582f_03
@@ -25,3 +24,29 @@ cards:
       - entity: light.unitec_2be2_02
         name: Couloir
     title: Kitchen
+
+  - type: glance
+    title: Theater
+    show_name: false
+    show_state: false
+    entities:
+    - type: entity-button
+      name: Theater
+      show_name: false
+      entity: scene.theater
+      tap_action:
+        action: call-service
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.theater
+          transition: 2.5
+    - type: entity-button                                                                                                                                                           
+      name: Max Light                                                                                                                                                         
+      show_name: false                                                                                                                                                              
+      entity: scene.max_light
+      tap_action:                                                                                                                                                                   
+        action: call-service                                                                                                                                                        
+        service: scene.turn_on                                                                                                                                                      
+        service_data:                                                                                                                                                               
+          entity_id: scene.max_light
+          transition: 2.5 

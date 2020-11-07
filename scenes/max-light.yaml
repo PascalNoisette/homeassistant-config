@@ -1,0 +1,9 @@
+- name: Max Light
+  icon: "mdi:white-balance-sunny"
+  entities:
+    light.dimmable_light_2:
+      state: "on"
+      brightness_pct: 100
+    light.dimmable_light_3:
+      state: "on"
+      brightness_pct: 100   

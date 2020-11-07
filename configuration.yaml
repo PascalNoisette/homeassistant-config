@@ -12,6 +12,7 @@ tts:
 
 group: !include groups.yaml
 automation: !include_dir_merge_list automations
+scene: !include_dir_merge_list scenes
 script: !include scripts.yaml
 
 rflink:

@@ -1,0 +1,11 @@
+- name: Theater
+  icon: "mdi:flower-tulip"
+  entities:
+    light.dimmable_light_2:
+      state: "on"
+      transition: 2
+      brightness_pct: 20
+    light.dimmable_light_3:
+      state: "on"
+      transition: 2                                                                                                                                                                 
+      brightness_pct: 20   

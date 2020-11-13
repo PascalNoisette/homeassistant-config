@@ -6,4 +6,7 @@
       brightness_pct: 100
     light.dimmable_light_3:
       state: "on"
-      brightness_pct: 100   
+      brightness_pct: 100
+    light.color_temperature_light_4:
+      state: "on"
+      brightness_pct: 100

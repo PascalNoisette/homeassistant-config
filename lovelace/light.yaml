@@ -23,6 +23,8 @@ cards:
         name: Kitchen table
       - entity: light.unitec_2be2_02
         name: Couloir
+      - entity: light.color_temperature_light_4
+        name: Cuisine
     title: Kitchen
 
   - type: glance

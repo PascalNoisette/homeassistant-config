@@ -8,4 +8,8 @@
     light.dimmable_light_3:
       state: "on"
       transition: 2                                                                                                                                                                 
-      brightness_pct: 20   
+      brightness_pct: 20 
+    light.color_temperature_light_4:
+      state: "on"
+      transistion: 2
+      brightness_pct: 20  

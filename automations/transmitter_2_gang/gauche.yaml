@@ -14,4 +14,6 @@
     - service: light.toggle
       entity_id: light.maclean_582f_02
     - service: light.toggle
+      entity_id: light.color_temperature_light_4
+    - service: light.toggle
       entity_id: light.maclean_582f_03

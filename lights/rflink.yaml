@@ -1,0 +1,19 @@
+- platform: rflink
+  automatic_add: true
+  devices:
+    maclean_582f_01: {}
+    maclean_582f_02: {}
+    maclean_582f_03: {}
+    maclean_582f_04: {}
+    unitec_2be2_00: {}
+    unitec_2be2_01: {}
+    unitec_2be2_02: {}
+    unitec_2be2_03: {}
+    unitec_2be2_04: {}
+    newkaku_0000c6c2_1:
+      type: hybrid
+    newkaku_02a48800_2:
+      type: hybrid
+    eurodomest_23bb15_00:
+      aliases:
+      - eurodomest_23bb15_01

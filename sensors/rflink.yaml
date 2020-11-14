@@ -1,0 +1,39 @@
+- platform: rflink
+  automatic_add: true
+  devices:
+    xiron_3301_temp:
+      sensor_type: temperature
+    xiron_3301_bat:
+      sensor_type: battery
+    xiron_3301_hum:
+      sensor_type: humidity
+    baldr_3602_temp:
+      sensor_type: temperature
+    baldr_3602_bat:
+      sensor_type: battery
+    baldr_3602_hum:
+      sensor_type: humidity
+    baldr_b301_temp:
+      sensor_type: temperature
+    baldr_b301_hum:
+      sensor_type: humidity
+    baldr_b301_bat:
+      sensor_type: battery
+    xiron_6f01_temp:
+      sensor_type: temperature
+    xiron_6f01_hum:
+      sensor_type: humidity
+    xiron_6f01_bat:
+      sensor_type: battery
+    xiron_0102_temp:
+      sensor_type: temperature
+    xiron_0102_hum:
+      sensor_type: humidity
+    xiron_0102_bat:
+      sensor_type: battery
+    xiron_1e03_temp:
+      sensor_type: temperature
+    xiron_1e03_hum:
+      sensor_type: humidity
+    xiron_1e03_bat:
+      sensor_type: battery

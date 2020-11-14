@@ -1,0 +1,26 @@
+- platform: rflink
+  devices:
+    ev1527_082b13_06:
+      device_class: door
+      off_delay: 60
+    ev1527_03c652_05: 
+      off_delay: 150
+      device_class: moisture
+    chuango_9b7539_02:
+      device_class: smoke
+      off_delay: 150
+    eurodomest_0c20ef_02:
+      device_class: motion
+      force_update: true
+    eurodomest_2c20ef_05:
+      device_class: motion
+      force_update: true
+    ev1527_0c44ea_0b:
+      force_update: true
+      off_delay: 60
+    ev1527_0c44ea_07:
+      force_update: true
+      off_delay: 60
+    ev1527_0c44ea_0e:
+      force_update: true
+      off_delay: 60

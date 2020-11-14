@@ -1,5 +1,8 @@
-- alias: 'Toggle lamp Turn ON Tradfri'
-  initial_state: 'on'                                                                                                                                                               
+- alias: 'Tradfri (<)'
+  initial_state: 'on'
+  condition:
+    - condition: template
+      value_template: "{{ state_attr('light.color_temperature_light_4', 'color_temp') | int > 230 }}"
   trigger:                                                                                                                                                                          
     - platform: event                                                                                                                                                               
       event_type: deconz_event                                                                                                                                                      
@@ -7,18 +10,7 @@
         id: tradfri_remote_control                                                                                                                                                   
         event: 4002                                                                                                                                                                 
   action:                                                                                                                                                                           
-    - service: light.turn_on                                                                                                                                                      
-      entity_id: light.unitec_2be2_01                                                                                                                                               
-    - service: light.turn_on                                                                                                                                                      
-      entity_id: light.unitec_2be2_02  
-    - service: light.turn_on                                                                                                                                                      
-      entity_id: light.dimmable_light_2
     - service: light.turn_on                                                                                                                                                       
       entity_id: light.color_temperature_light_4
-    - service: light.turn_on                                                                                                                                                       
-      entity_id: light.dimmable_light_3                                                                                                                                           
-    - service: light.turn_on                                                                                                                                                      
-      entity_id: light.maclean_582f_02                                                                                                                                              
-    - service: light.turn_on                                                                                                                                                      
-      entity_id: light.maclean_582f_03 
-
+      data_template:
+        color_temp: "{{state_attr('light.color_temperature_light_4', 'color_temp') | int - 50 }}"

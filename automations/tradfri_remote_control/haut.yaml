@@ -1,4 +1,4 @@
-- alias: 'Toggle lamp Turn ON Tradfri'
+- alias: 'Tradfri (^)'
   initial_state: 'on'                                                                                                                                                               
   trigger:                                                                                                                                                                          
     - platform: event                                                                                                                                                               
@@ -6,6 +6,17 @@
       event_data:                                                                                                                                                                   
         id: tradfri_remote_control                                                                                                                                                   
         event: 2002                                                                                                                                                                 
-  action:   
-    - service: scene.turn_on
-      entity_id: scene.max_light
+  action:                                                                                                                                                                           
+    - service: light.turn_on                                                                                                                                                       
+      entity_id: light.color_temperature_light_4
+      data_template:
+        brightness: "{{state_attr('light.color_temperature_light_4', 'brightness') | int + 60 }}"
+    - service: light.turn_on
+      entity_id: light.dimmable_light_2
+      data_template:
+        brightness: "{{state_attr('light.dimmable_light_2', 'brightness') | int + 60 }}"
+    - service: light.turn_on
+      entity_id: light.dimmable_light_3
+      data_template:
+        brightness: "{{state_attr('light.dimmable_light_3', 'brightness') | int + 60 }}"
+

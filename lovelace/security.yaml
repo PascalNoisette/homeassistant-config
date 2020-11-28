@@ -60,3 +60,12 @@ cards:
         name: Print Attestation
         icon: mdi:printer
         show_state: true
+      - entity: switch.print_attestation_iulia
+        name: Attestation Iulia
+        icon: mdi:printer
+        show_state: true
+      - entity: switch.print_attestation_pascal
+        name: Attestation Pascal
+        icon: mdi:printer
+        show_state: true
+

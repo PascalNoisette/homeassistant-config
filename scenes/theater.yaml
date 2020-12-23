@@ -5,7 +5,7 @@
       state: "on"
       transition: 2
       brightness_pct: 20
-    light.dimmable_light_3:
+    light.color_temperature_light_7:
       state: "on"
       transition: 2                                                                                                                                                                 
       brightness_pct: 20 

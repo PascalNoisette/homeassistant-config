@@ -4,7 +4,7 @@
     light.dimmable_light_2:
       state: "on"
       brightness_pct: 100
-    light.dimmable_light_3:
+    light.color_temperature_light_7:
       state: "on"
       brightness_pct: 100
     light.color_temperature_light_4:

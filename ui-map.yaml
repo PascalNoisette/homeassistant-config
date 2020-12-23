@@ -1,0 +1,13 @@
+title: My Awesome Home
+views:
+  - path: map
+    title: Map
+    panel: true
+    icon: mdi:google-map
+    cards:
+      - type: map
+        title: Map
+        entities:
+          - entity: person.pascal
+          - entity: person.iulia
+        hours_to_show: 12

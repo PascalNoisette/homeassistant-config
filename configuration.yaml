@@ -1,7 +1,29 @@
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
-default_config:
-
+#default_config:
+config:
+#
+frontend:
+#
+history:
+#
+image:
+#
+logbook:
+#
+media_source:
+#
+mobile_app:
+#
+ssdp:        
+#
+sun:
+#
+system_health:
+#
+tag:
+#
+zeroconf:
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
 #   base_url: example.duckdns.org:8123
@@ -45,6 +67,22 @@ glances:
 
 lovelace:
   mode: yaml
+  dashboards:
+    lovelace-meteo: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: ui-meteo.yaml
+      title: Meteo
+      icon: mdi:weather-partly-cloudy
+      show_in_sidebar: true
+      require_admin: true
+    lovelace-map: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: ui-map.yaml
+      title: Map
+      icon: mdi:google-maps
+      show_in_sidebar: true
+      require_admin: true
+
 
 light: !include_dir_merge_list lights
 sensor: !include_dir_merge_list sensors

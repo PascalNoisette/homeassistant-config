@@ -1,0 +1,20 @@
+title: My Awesome Home
+views:
+  - path: meteo
+    title: Meteo
+    panel: true
+    icon: mdi:weather-partly-cloudy
+    cards:
+      - type: history-graph
+        hours_to_show: 80
+        entities:
+        - entity: sensor.baldr_3602_temp
+          name: Exterieur
+        - entity: sensor.baldr_b301_temp
+          name: Salon
+        - entity: sensor.xiron_6f01_temp
+          name: Terrasse
+        - entity: sensor.xiron_0102_temp
+          name: Cuisine
+        - entity: sensor.xiron_1e03_temp
+          name: Canape

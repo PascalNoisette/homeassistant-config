@@ -12,8 +12,10 @@ cards:
         name: Desk
       - entity: light.dimmable_light_2
         name: Canape
-      - entity: light.dimmable_light_3
+      - entity: light.color_temperature_light_7
         name: Living
+      - entity: light.unitec_3aa3_01
+        name: Couloir
     title: Living
     show_header_toggle: true
 

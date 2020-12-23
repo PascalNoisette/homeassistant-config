@@ -566,7 +566,4 @@ cards:
                 repeat: 2
   - type: media-control
     entity: media_player.chromecast1919
-  - type: iframe
-    url: https://remote.netpascal.site/#toto
-    aspect_ratio: 85%
 

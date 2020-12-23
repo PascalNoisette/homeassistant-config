@@ -6,6 +6,21 @@
       event_data:
         id: tradfri_remote_control
         event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_2
+        event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_3
+        event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_4
+        event: 5002
   condition:
     - condition: template
       value_template: "{{ state_attr('light.color_temperature_light_4', 'color_temp') | int < 500 }}"
@@ -14,3 +29,34 @@
       entity_id: light.color_temperature_light_4
       data_template:
         color_temp: "{{state_attr('light.color_temperature_light_4', 'color_temp') | int + 50 }}"
+- alias: 'Tradfri (>)'
+  initial_state: 'on'
+  trigger:
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control
+        event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_2
+        event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_3
+        event: 5002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_4
+        event: 5002
+  condition:
+    - condition: template
+      value_template: "{{ state_attr('light.color_temperature_light_7', 'color_temp') | int < 500 }}"
+  action:
+    - service: light.turn_on
+      entity_id: light.color_temperature_light_7
+      data_template:
+        color_temp: "{{state_attr('light.color_temperature_light_7', 'color_temp') | int + 50 }}"

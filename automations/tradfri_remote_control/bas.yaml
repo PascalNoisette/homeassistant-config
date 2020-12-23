@@ -4,8 +4,23 @@
     - platform: event                                                                                                                                                               
       event_type: deconz_event                                                                                                                                                      
       event_data:                                                                                                                                                                   
-        id: tradfri_remote_control                                                                                                                                                   
-        event: 3002                                                                                                                                                                 
+        id: tradfri_remote_control
+        event: 3002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_2
+        event: 3002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_3
+        event: 3002
+    - platform: event
+      event_type: deconz_event
+      event_data:
+        id: tradfri_remote_control_4
+        event: 3002
   action:   
     - service: light.turn_on                                                                                                                                                        
       entity_id: light.color_temperature_light_4                                                                                                                                    
@@ -16,6 +31,6 @@
       data_template:                                                                                                                                                                
         brightness: "{{state_attr('light.dimmable_light_2', 'brightness') | int - 60 }}"                                                                                   
     - service: light.turn_on                                                                                                                                                        
-      entity_id: light.dimmable_light_3                                                                                                                                             
+      entity_id: light.color_temperature_light_7                                                                                                                                             
       data_template:                                                                                                                                                                
-        brightness: "{{state_attr('light.dimmable_light_3', 'brightness') | int - 60 }}"                                                                                   
+        brightness: "{{state_attr('light.color_temperature_light_7', 'brightness') | int - 60 }}"                                                                                   

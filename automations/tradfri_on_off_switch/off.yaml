@@ -12,7 +12,7 @@
     - service: light.turn_off                                                                                                                                                       
       entity_id: light.color_temperature_light_4
     - service: light.turn_off                                                                                                                                                       
-      entity_id: light.dimmable_light_3 
+      entity_id: light.color_temperature_light_7 
     - service: light.turn_off
       entity_id: light.maclean_582f_02
     - service: light.turn_off
@@ -21,3 +21,5 @@
       entity_id: light.unitec_2be2_01
     - service: light.turn_off
       entity_id: light.unitec_2be2_02
+    - service: light.turn_off
+      entity_id: light.unitec_3aa3_01

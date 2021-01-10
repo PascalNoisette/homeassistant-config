@@ -7,6 +7,11 @@
     light.color_temperature_light_7:
       state: "on"
       brightness_pct: 100
+    light.color_temperature_light_8:                                                                                                                                                
+      state: "on"                                                                                                                                                                   
+      brightness_pct: 100 
     light.color_temperature_light_4:
       state: "on"
       brightness_pct: 100
+    light.maclean_582f_03:                                                                                                                                                          
+      state: "on"

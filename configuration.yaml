@@ -64,6 +64,8 @@ glances:
     name: frontend
   - host: 10.249.107.1
     name: gateway
+  - host: mail
+    name: mail
 
 lovelace:
   mode: yaml

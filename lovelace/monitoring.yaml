@@ -40,6 +40,7 @@ cards:
     - entity: sensor.gateway_media_saumon_used_percent
     - entity: sensor.jitsi_etc_hosts_used_percent
     - entity: sensor.gateway_used_percent
+    - entity: sensor.mail_used_percent
 
   - type: history-graph
     title: Swap
@@ -55,5 +56,22 @@ cards:
     - entity: sensor.third_containers_ram_used
     - entity: sensor.matrix_containers_ram_used
     - entity: sensor.jitsi_containers_ram_used
+    - entity: sensor.mail_containers_ram_used
+
+  - type: history-graph                           
+    title: Load 
+    entities:                                    
+    - entity: sensor.gateway_cpu_load
+
+  - type: history-graph
+    title: Temperature
+    entities:
+    - entity: sensor.first_acpitz_1_temp
+    - entity: sensor.first_acpitz_2_temp
+    - entity: sensor.first_core_0_temp
+    - entity: sensor.first_core_2_temp
+    - entity: sensor.first_package_id_0_temp
+    - entity: sensor.first_pch_skylake_1_temp
+
 
 

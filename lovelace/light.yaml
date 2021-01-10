@@ -14,7 +14,7 @@ cards:
         name: Canape
       - entity: light.color_temperature_light_7
         name: Living
-      - entity: light.unitec_3aa3_01
+      - entity: light.color_temperature_light_8
         name: Couloir
     title: Living
     show_header_toggle: true

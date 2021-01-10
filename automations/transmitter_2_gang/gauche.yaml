@@ -12,8 +12,8 @@
     - service: light.toggle
       entity_id: light.color_temperature_light_7 
     - service: light.toggle
+      entity_id: light.color_temperature_light_8 
+    - service: light.toggle
       entity_id: light.maclean_582f_02
     - service: light.toggle
       entity_id: light.maclean_582f_03
-    - service: light.toggle
-      entity_id: light.unitec_3aa3_01

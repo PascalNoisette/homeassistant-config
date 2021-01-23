@@ -36,7 +36,6 @@ cards:
     - entity: sensor.second_etc_hosts_used_percent
     - entity: sensor.third_etc_hosts_used_percent
     - entity: sensor.frontend_used_percent
-    - entity: sensor.matrix_etc_hosts_used_percent
     - entity: sensor.gateway_media_saumon_used_percent
     - entity: sensor.jitsi_etc_hosts_used_percent
     - entity: sensor.gateway_used_percent
@@ -54,7 +53,6 @@ cards:
     - entity: sensor.first_containers_ram_used
     - entity: sensor.second_containers_ram_used
     - entity: sensor.third_containers_ram_used
-    - entity: sensor.matrix_containers_ram_used
     - entity: sensor.jitsi_containers_ram_used
     - entity: sensor.mail_containers_ram_used
 

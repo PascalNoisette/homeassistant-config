@@ -56,8 +56,6 @@ glances:
     name: second
   - host: third
     name: third
-  - host: matrix
-    name: matrix
   - host: jitsi
     name: jitsi
   - host: frontend

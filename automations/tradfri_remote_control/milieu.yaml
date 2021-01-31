@@ -48,6 +48,9 @@
        - condition: state
          entity_id: light.maclean_582f_03
          state: 'on'
+       - condition: state
+         entity_id: light.dimmable_light_3
+         state: 'on'
   action:
     - service: light.turn_off
       entity_id: light.unitec_2be2_01
@@ -65,6 +68,8 @@
       entity_id: light.maclean_582f_02
     - service: light.turn_off
       entity_id: light.maclean_582f_03
+    - service: light.turn_off
+      entity_id: light.dimmable_light_3
 - alias: 'Toggle lamp Turn OFF to ON TradfriMID'
   initial_state: 'on'
   trigger:
@@ -114,6 +119,9 @@
          state: 'off'
        - condition: state
          entity_id: light.maclean_582f_03
+         state: 'off'
+       - condition: state
+         entity_id: light.dimmable_light_3
          state: 'off'
   action:
     - service: light.turn_on

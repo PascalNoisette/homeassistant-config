@@ -24,9 +24,11 @@ cards:
       - entity: light.unitec_2be2_01
         name: Kitchen table
       - entity: light.unitec_2be2_02
-        name: Couloir
+        name: Machine a laver
       - entity: light.color_temperature_light_4
         name: Cuisine
+      - entity: light.dimmable_light_3
+        name: Couloir
     title: Kitchen
 
   - type: glance

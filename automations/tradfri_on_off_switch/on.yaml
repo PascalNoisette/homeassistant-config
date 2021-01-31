@@ -22,4 +22,6 @@
     - service: light.turn_on                                                                                                                                                      
       entity_id: light.maclean_582f_02                                                                                                                                              
     - service: light.turn_on                                                                                                                                                      
-      entity_id: light.maclean_582f_03 
+      entity_id: light.maclean_582f_03
+    - service: light.turn_on
+      entity_id: light.dimmable_light_3

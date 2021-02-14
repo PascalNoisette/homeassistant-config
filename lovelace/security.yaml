@@ -24,7 +24,13 @@ badges:
     state_filter:
       - operator: "<"
         value: 30
-
+  - type: entity-filter
+    entities:
+      - entity: device_tracker.tilt
+    state_filter:                  
+      - operator: "<"                     
+        value: 30  
+        attribute: battery   
 cards:
   - type: entities
     show_header_toggle: false

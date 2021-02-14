@@ -10,4 +10,5 @@ views:
         entities:
           - entity: person.pascal
           - entity: person.iulia
+          - entity: device_tracker.tilt
         hours_to_show: 12

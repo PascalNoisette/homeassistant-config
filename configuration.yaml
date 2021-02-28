@@ -48,16 +48,6 @@ rflink:
     - xiron_1e03_update_time
 device_tracker:
   - platform: bbox
-  - platform: traccar
-    ssl: true
-    host: !secret TRACCAR_HOST
-    port: 443
-    verify_ssl: false
-    username: !secret TRACCAR_USERNAME
-    password: !secret TRACCAR_PASSWORD
-    event: ['all_events']
-    new_device_defaults:
-      track_new_devices: true
 
 glances:
   - host: 127.0.0.1
@@ -74,6 +64,8 @@ glances:
     name: gateway
   - host: mail
     name: mail
+  - host: fourth
+    name: fourth
 
 lovelace:
   mode: yaml

@@ -40,6 +40,7 @@ cards:
     - entity: sensor.jitsi_etc_hosts_used_percent
     - entity: sensor.gateway_used_percent
     - entity: sensor.mail_used_percent
+    - entity: sensor.fourth_used_percent
 
   - type: history-graph
     title: Swap
@@ -55,6 +56,7 @@ cards:
     - entity: sensor.third_containers_ram_used
     - entity: sensor.jitsi_containers_ram_used
     - entity: sensor.mail_containers_ram_used
+    - entity: sensor.fourth_containers_ram_used
 
   - type: history-graph                           
     title: Load 

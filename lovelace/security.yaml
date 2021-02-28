@@ -21,16 +21,11 @@ badges:
       - entity: sensor.openclose_8_battery_level
       - entity: sensor.openclose_9_battery_level
       - entity: sensor.openclose_10_battery_level
+      - entity: sensor.e5823_niveau_de_batterie_2
+        name: Velo
     state_filter:
       - operator: "<"
         value: 30
-  - type: entity-filter
-    entities:
-      - entity: device_tracker.tilt
-    state_filter:                  
-      - operator: "<"                     
-        value: 30  
-        attribute: battery   
 cards:
   - type: entities
     show_header_toggle: false
@@ -39,6 +34,8 @@ cards:
         name: Fumée
       - entity: binary_sensor.ev1527_03c652_05
         name: Fuite
+      - entity: sensor.e5823_niveau_de_batterie_2
+        name: Velo
       - entity: binary_sensor.front_door_motion
         name: Mouvement à l'entrée
       - entity: sensor.xiron_3301_temp

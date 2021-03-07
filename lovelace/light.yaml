@@ -16,6 +16,8 @@ cards:
         name: Living
       - entity: light.color_temperature_light_8
         name: Couloir
+      - entity: light.color_light_6
+        name: Boite de nuit
     title: Living
     show_header_toggle: true
 
@@ -56,3 +58,16 @@ cards:
         service_data:                                                                                                                                                               
           entity_id: scene.max_light
           transition: 2.5 
+    - type: entity-button                                                                                                                                                           
+      name: Boite de nuit
+      entity: automation.boite_de_nuit
+      tap_action:
+        action: call-service
+        service: automation.turn_on
+        service_data:
+          entity_id: automation.boite_de_nuit
+      hold_action:                                                                                                                                                                   
+        action: call-service                                                                                                                                                        
+        service: automation.turn_off                                                                                                                                                
+        service_data:                                                                                                                                                               
+          entity_id: automation.boite_de_nuit                                                                                                                                       

@@ -14,11 +14,11 @@ cards:
         - type: entity-button
           name: power
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:power
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E040BF'
                 nbits: 32
@@ -26,11 +26,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:location-enter
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0807F'
                 nbits: 32
@@ -38,35 +38,35 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:television-box
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0D827'
                 nbits: 32
                 repeat: 2
         - type: entity-button
           title: Living room
-          entity: sensor.nmcu_domobox                                                                                                                                               
+          entity: sensor.tuya_multibridge                                                                                                                                               
           show_name: false
           icon: mdi:format-header-1
           tap_action:                                                                                                                                                               
             action: call-service                                                                                                                                                    
-            service: esphome.nmcu_multibridge_send_nec                                                                                                                          
+            service: esphome.multibridge_send_nec                                                                                                                          
             service_data:                                                                                                                                                           
                 data: '0x40FFA05F'
                 nbits: 32                                                                                                                                                           
                 repeat: 2 
         - type: entity-button
           title: Living room
-          entity: sensor.nmcu_domobox                                                                                                                                               
+          entity: sensor.tuya_multibridge                                                                                                                                               
           icon: mdi:google-chrome
           show_name: false
           tap_action:                                                                                                                                                               
             action: call-service                                                                                                                                                    
-            service: esphome.nmcu_multibridge_send_nec                                                                                                                              
+            service: esphome.multibridge_send_nec                                                                                                                              
             service_data:                                                                                                                                                           
                 data: '0x40FF10EF'                                                                                                                                                  
                 nbits: 32                                                                                                                                                           
@@ -74,35 +74,35 @@ cards:
         - type: entity-button
           title: Living room
           show_name: false
-          entity: sensor.nmcu_domobox                                                                                                                                               
+          entity: sensor.tuya_multibridge                                                                                                                                               
           icon: mdi:laptop
           tap_action:                                                                                                                                                               
             action: call-service                                                                                                                                                    
-            service: esphome.nmcu_multibridge_send_nec                                                                                                                              
+            service: esphome.multibridge_send_nec                                                                                                                              
             service_data:                                                                                                                                                           
                 data: '0x40FF906F'                                                                                                                                                  
                 nbits: 32                                                                                                                                                           
                 repeat: 2     
         - type: entity-button
           title: Living room
-          entity: sensor.nmcu_domobox                                                                                                                                               
+          entity: sensor.tuya_multibridge                                                                                                                                               
           show_name: false
           icon: mdi:gamepad-square-outline
           tap_action:                                                                                                                                                               
             action: call-service                                                                                                                                                    
-            service: esphome.nmcu_multibridge_send_nec                                                                                                                              
+            service: esphome.multibridge_send_nec                                                                                                                              
             service_data:                                                                                                                                                           
                 data: '0x40FF50AF'                                                                                                                                                  
                 nbits: 32                                                                                                                                                           
                 repeat: 2 
         - type: entity-button
           title: Living room
-          entity: sensor.nmcu_domobox                                                                                                                                               
+          entity: sensor.tuya_multibridge                                                                                                                                               
           show_name: false
           icon: mdi:format-header-5
           tap_action:                                                                                                                                                               
             action: call-service                                                                                                                                                    
-            service: esphome.nmcu_multibridge_send_nec                                                                                                                              
+            service: esphome.multibridge_send_nec                                                                                                                              
             service_data:                                                                                                                                                           
                 data: '0x40FFB04F'                                                                                                                                                  
                 nbits: 32                                                                                                                                                           
@@ -112,16 +112,16 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           show_icon: false
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:arrow-up
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E006F9'
                 nbits: 32
@@ -129,7 +129,7 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           show_icon: false
 
     - type: horizontal-stack
@@ -137,11 +137,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:arrow-left
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0A659'
                 nbits: 32
@@ -149,11 +149,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:check
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E016E9'
                 nbits: 32
@@ -161,11 +161,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:arrow-right
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E046B9'
                 nbits: 32
@@ -176,16 +176,16 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           show_icon: false
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:arrow-down
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E08679'
                 nbits: 32
@@ -193,7 +193,7 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           show_icon: false
 
 
@@ -202,11 +202,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-1-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E020DF'
                 nbits: 32
@@ -214,11 +214,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-2-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0A05F'
                 nbits: 32
@@ -226,11 +226,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-3-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0609F'
                 nbits: 32
@@ -240,11 +240,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-4-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E010EF'
                 nbits: 32
@@ -252,11 +252,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-5-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0906F'
                 nbits: 32
@@ -264,11 +264,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-6-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E050AF'
                 nbits: 32
@@ -278,11 +278,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-7-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E030CF'
                 nbits: 32
@@ -290,11 +290,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-8-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0B04F'
                 nbits: 32
@@ -302,11 +302,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:numeric-9-box-outline
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0708F'
                 nbits: 32
@@ -316,11 +316,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-minus
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0D02F'
                 nbits: 32
@@ -328,11 +328,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-mute
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0F00F'
                 nbits: 32
@@ -340,11 +340,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-plus
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0E01F'
                 nbits: 32
@@ -354,11 +354,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:minus
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E008F7'
                 nbits: 32
@@ -366,11 +366,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:plus-one
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E048B7'
                 nbits: 32
@@ -382,11 +382,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:keyboard-return
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E01AE5'
                 nbits: 32
@@ -394,11 +394,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:exit-run
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0B44B'
                 nbits: 32
@@ -406,11 +406,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:check-bold
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E016E9'
                 nbits: 32
@@ -418,11 +418,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:tools
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E0D22D'
                 nbits: 32
@@ -430,11 +430,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:menu
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_samsung
+            service: esphome.multibridge_send_samsung
             service_data:
                 data: '0xE0E058A7'
                 nbits: 32
@@ -449,11 +449,11 @@ cards:
         - type: entity-button
           name: power
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:power
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B28B649'
                 nbits: 32
@@ -461,11 +461,11 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:usb
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B287A85'
                 nbits: 32
@@ -473,11 +473,11 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:bluetooth
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B28BA45'
                 nbits: 32
@@ -487,11 +487,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-minus
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B280AF5'
                 nbits: 32
@@ -499,11 +499,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-mute
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B287689'
                 nbits: 32
@@ -511,11 +511,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:volume-plus
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B28F20D'
                 nbits: 32
@@ -525,11 +525,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:skip-backward
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B286897'
                 nbits: 32
@@ -537,11 +537,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:play-pause
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B280EF1'
                 nbits: 32
@@ -549,11 +549,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:skip-forward
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B28A857'
                 nbits: 32
@@ -565,11 +565,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:tune
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B2852AD'
                 nbits: 32
@@ -577,11 +577,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.nmcu_domobox
+          entity: sensor.tuya_multibridge
           icon: mdi:access-point-network
           tap_action:
             action: call-service
-            service: esphome.nmcu_multibridge_send_nec
+            service: esphome.multibridge_send_nec
             service_data:
                 data: '0x9B289669'
                 nbits: 32

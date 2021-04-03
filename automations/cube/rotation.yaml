@@ -1,0 +1,44 @@
+- alias: 'Cube incr light'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: switch_18
+      gesture: 7
+  action:
+  - service: light.turn_on                                                                                                                                                        
+    entity_id: light.color_temperature_light_4                                                                                                                                    
+    data_template:                                                                                                                                                                
+      brightness: "{{state_attr('light.color_temperature_light_4', 'brightness') | int + 60 }}"  
+  - service: light.turn_on
+    entity_id: light.dimmable_light_2
+    data_template:
+      brightness: "{{state_attr('light.dimmable_light_2', 'brightness') | int + 60 }}"
+  - service: light.turn_on
+    entity_id: light.color_temperature_light_7
+    data_template:
+      brightness: "{{state_attr('light.color_temperature_light_7', 'brightness') | int + 60 }}"
+
+
+
+- alias: 'Cube decr light'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: switch_18
+      gesture: 8
+  action:
+  - service: light.turn_on                                                                                                                                                        
+    entity_id: light.color_temperature_light_4                                                                                                                                    
+    data_template:                                                                                                                                                                
+      brightness: "{{state_attr('light.color_temperature_light_4', 'brightness') | int - 60 }}"  
+  - service: light.turn_on
+    entity_id: light.dimmable_light_2
+    data_template:
+      brightness: "{{state_attr('light.dimmable_light_2', 'brightness') | int - 60 }}"
+  - service: light.turn_on
+    entity_id: light.color_temperature_light_7
+    data_template:
+      brightness: "{{state_attr('light.color_temperature_light_7', 'brightness') | int - 60 }}"
+

@@ -28,6 +28,7 @@ cards:
       - sensor.bbox_currently_used_download_bandwidth
       - sensor.bbox_currently_used_upload_bandwidth
       - sensor.bbox_uptime
+      - input_number.cube
 
   - type: glance
     title: Disk

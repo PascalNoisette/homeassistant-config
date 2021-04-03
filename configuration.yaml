@@ -91,6 +91,7 @@ sensor: !include_dir_merge_list sensors
 binary_sensor: !include_dir_merge_list binary_sensors
 switch: !include_dir_merge_list switches
 input_boolean: !include_dir_merge_named input_booleans
+input_number: !include_dir_merge_named input_numbers
 
 logger:
   default: error

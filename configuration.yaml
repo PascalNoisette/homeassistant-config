@@ -50,7 +50,7 @@ device_tracker:
   - platform: bbox
 
 glances:
-  - host: 127.0.0.1
+  - host: first
     name: first
   - host: second
     name: second
@@ -58,14 +58,16 @@ glances:
     name: third
   - host: jitsi
     name: jitsi
-  - host: frontend
-    name: frontend
+  - host: nas
+    name: nas
   - host: 10.249.107.1
     name: gateway
   - host: mail
     name: mail
   - host: fourth
     name: fourth
+  - host: fifth
+    name: fifth
 
 lovelace:
   mode: yaml

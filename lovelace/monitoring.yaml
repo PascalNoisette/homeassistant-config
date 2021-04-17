@@ -36,7 +36,8 @@ cards:
     - entity: sensor.first_etc_hosts_used_percent
     - entity: sensor.second_etc_hosts_used_percent
     - entity: sensor.third_etc_hosts_used_percent
-    - entity: sensor.frontend_used_percent
+    - entity: sensor.nas_used_percent
+    - entity: sensor.fifth_used_percent
     - entity: sensor.gateway_media_saumon_used_percent
     - entity: sensor.jitsi_etc_hosts_used_percent
     - entity: sensor.gateway_used_percent

@@ -21,7 +21,7 @@ badges:
       - entity: sensor.openclose_8_battery_level
       - entity: sensor.openclose_9_battery_level
       - entity: sensor.openclose_10_battery_level
-      - entity: sensor.e5823_niveau_de_batterie_2
+      - entity: sensor.e5823_niveau_de_batterie_3
         name: Velo
     state_filter:
       - operator: "<"
@@ -38,7 +38,7 @@ cards:
         entity: light.ev1527_0dce12_08
       - name: Garden emergency stop        
         entity: light.ev1527_0dce12_04  
-      - entity: sensor.e5823_niveau_de_batterie_2
+      - entity: sensor.e5823_niveau_de_batterie_3
         name: Velo
       - entity: binary_sensor.front_door_motion
         name: Mouvement à l'entrée

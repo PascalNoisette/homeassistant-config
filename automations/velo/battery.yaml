@@ -1,10 +1,10 @@
 - alias: Tablette Low
   trigger:
     platform: numeric_state
-    entity_id: sensor.e5823_niveau_de_batterie_2
+    entity_id: sensor.e5823_niveau_de_batterie_3
     below: 61
   action:
     - service: persistent_notification.create
       data:
         title: "Velo"
-        message: "La batterie du velo est a {{ states('sensor.e5823_niveau_de_batterie_2') }}"
+        message: "La batterie du velo est a {{ states('sensor.e5823_niveau_de_batterie_3') }}"

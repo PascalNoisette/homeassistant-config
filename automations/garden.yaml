@@ -7,35 +7,10 @@
   action:
     - service: light.toggle
       entity_id: light.ev1527_0dce12_08
-
-
-- alias: Garden auto stop
-  trigger:
-    - platform: state
-      entity_id: light.ev1527_0dce12_08
-      from: 'off'
-      to: 'on'
-      for:
-        hours: 0
-        minutes: 2
-        seconds: 0
-    - platform: state
-      entity_id: light.ev1527_0dce12_08
-      from: 'on'
-      to: 'off'
-      for:      
-        hours: 0  
-        minutes: 2 
-        seconds: 0
-  action:
-    - service: light.toggle
+    - delay: '00:01:00'
+    - service: light.toggle                                                                                                                                                         
+      entity_id: light.ev1527_0dce12_04   
+    - delay: '00:01:00'
+    - service: light.toggle            
       entity_id: light.ev1527_0dce12_04
-    - delay: 5
-    - service: light.toggle                                                                                                                                                         
-      entity_id: light.ev1527_0dce12_04  
-    - delay: 5                                                                                                                                                                      
-    - service: light.toggle                                                                                                                                                         
-      entity_id: light.ev1527_0dce12_04
-    - delay: 10                                                                                                                                                                      
-    - service: light.toggle                                                                                                                                                         
-      entity_id: light.ev1527_0dce12_04                      
+

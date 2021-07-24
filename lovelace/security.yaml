@@ -34,9 +34,9 @@ cards:
         name: Fumée
       - entity: binary_sensor.ev1527_03c652_05
         name: Fuite
-      - name: Garden start
+      - name: Garden start 08
         entity: light.ev1527_0dce12_08
-      - name: Garden emergency stop        
+      - name: Garden start 04
         entity: light.ev1527_0dce12_04  
       - entity: sensor.e5823_niveau_de_batterie_3
         name: Velo

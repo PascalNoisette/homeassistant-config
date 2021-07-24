@@ -8,4 +8,16 @@
       entity_id: light.color_temperature_light_8
       data_template:                                                                                                                                                                
         brightness: 250
-
+    - alias: "Take several photo"
+      repeat:
+        count: 25
+        sequence:
+          - service: camera.snapshot
+            target:
+              entity_id: camera.mycamera
+            data:
+              filename: '/stick/camera/entree/{{ now().strftime("%Y") }}/{{ now().strftime("%m") }}/{{ now().strftime("%d") }}/entree_{{ now().strftime("%Y%m%d-%H%M%S") }}.jpg'
+          - delay:
+              seconds: 1
+    - service: shell_command.rclone_camera_pic
+    - service: shell_command.make_gif_with_last_pic

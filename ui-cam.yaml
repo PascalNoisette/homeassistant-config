@@ -1,0 +1,20 @@
+title: My Awesome Home
+views:
+  - path: cam
+    title: Camera
+    panel: true
+    icon: mdi:camera
+    cards:
+    - type: horizontal-stack
+      cards:
+      - type: picture-glance
+        title: Esp32 Cam
+        aspect_ratio: 16x9
+        entities:
+        - light.esp32camslight
+        camera_image: camera.mycamera
+      - type: picture-entity
+        entity: camera.gif_from_jpg_camera
+        camera_image: camera.gif_from_jpg_camera
+        show_name: false
+        show_state: false

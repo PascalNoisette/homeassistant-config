@@ -1,6 +1,8 @@
 path: monitoring
 title: Monitoring
 icon: mdi:laptop
+visible:
+  - user: 89e84b4c25c24a689fca9b5ab7d50889  
 cards:
   - type: entities
     show_header_toggle: false

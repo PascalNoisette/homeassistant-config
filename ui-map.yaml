@@ -4,6 +4,9 @@ views:
     title: Map
     panel: true
     icon: mdi:google-map
+    visible:
+      - user: e326af935b6f48188b4f820973e7341d                                
+      - user: 89e84b4c25c24a689fca9b5ab7d50889  
     cards:
       - type: map
         title: Map

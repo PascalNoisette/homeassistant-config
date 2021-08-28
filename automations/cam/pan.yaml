@@ -1,0 +1,8 @@
+- alias: Write Servo Pan Value to ESP
+  trigger:
+    platform: state
+    entity_id: input_number.servo_control_pan
+  action:
+    - service: esphome.esp32cams_control_servo_pan
+      data_template:
+        level: '{{ trigger.to_state.state | int }}'

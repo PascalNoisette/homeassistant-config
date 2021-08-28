@@ -1,0 +1,7 @@
+servo_control_pan:
+  name: Servo Control Pan
+  initial: 0
+  min: -100
+  max: 100
+  step: 1
+  mode: slider

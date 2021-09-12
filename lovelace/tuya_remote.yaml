@@ -529,6 +529,37 @@ cards:
                 data: '0x9B289669'
                 nbits: 32
                 repeat: 2
+  - type: vertical-stack                             
+    cards:                                           
+    - type: glance                                   
+      title: Clim
+      show_name: false                           
+      show_state: false                          
+      entities:                                  
+        - type: entity-button                    
+          name: power                            
+          show_name: false                       
+          entity: sensor.tuya_multibridge        
+          icon: mdi:power                        
+          tap_action:                                
+            action: call-service                 
+            service: esphome.multibridge_send_coolix
+            service_data:                        
+                data: '0xB27BE0'               
+                nbits: 24
+                repeat: 2                        
+        - type: entity-button                    
+          name: On
+          show_name: false                       
+          entity: sensor.tuya_multibridge        
+          icon: mdi:fan
+          tap_action:                                
+            action: call-service                 
+            service: esphome.multibridge_send_coolix
+            service_data:                        
+                data: '0xB21FC8'               
+                nbits: 24
+                repeat: 2
   - type: media-control
     entity: media_player.chromecast1919
   - type: media-control

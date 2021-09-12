@@ -24,9 +24,16 @@ system_health:
 tag:
 #
 zeroconf:
+  default_interface: true
+  ipv6: false
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-# http:
-#   base_url: example.duckdns.org:8123
+http:
+  base_url: home.netpascal.site
+  use_x_forwarded_for: true
+  trusted_proxies:
+   - 10.249.107.164
+   - 127.0.0.1
+   - ::1
 
 # Text to speech
 tts:
@@ -95,13 +102,6 @@ lovelace:
       icon: mdi:google-maps
       show_in_sidebar: true
       require_admin: true
-    lovelace-cam:
-      mode: yaml                                                                                                                                                                    
-      filename: ui-cam.yaml                                                                                                                                                         
-      title: Camera                                                                                                                                                              
-      icon: mdi:camera
-      show_in_sidebar: true                                                                                                                                                         
-      require_admin: true  
 
 light: !include_dir_merge_list lights
 sensor: !include_dir_merge_list sensors

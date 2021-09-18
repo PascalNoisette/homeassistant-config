@@ -13,5 +13,5 @@ views:
         entities:
           - entity: person.pascal
           - entity: person.iulia
-          - entity: person.velo
+          - entity: sensor.e5823_tracking
         hours_to_show: 12

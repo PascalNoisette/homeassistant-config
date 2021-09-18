@@ -19,3 +19,10 @@
       sensor_type: humidity
     xiron_0102_bat:
       sensor_type: battery
+    xiron_0a01_temp:
+      sensor_type: temperature
+    xiron_0a01_bat:
+      sensor_type: battery
+    xiron_0a01_hum:
+      sensor_type: humidity
+

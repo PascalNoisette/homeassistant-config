@@ -10,6 +10,7 @@ badges:
       - entity: sensor.baldr_b301_bat
       - entity: sensor.xiron_3301_bat
       - entity: sensor.xiron_0102_bat
+      - entity: sensor.xiron_0a01_bat
     state_filter:
       - operator: "!="
         value: "ok"
@@ -21,7 +22,7 @@ badges:
       - entity: sensor.openclose_8_battery_level
       - entity: sensor.openclose_9_battery_level
       - entity: sensor.openclose_10_battery_level
-      - entity: sensor.e5823_niveau_de_batterie_3
+      - entity: sensor.e5823_niveau_de_batterie_4
         name: Velo
     state_filter:
       - operator: "<"
@@ -38,7 +39,7 @@ cards:
         entity: light.ev1527_0dce12_08
       - name: Garden start 04
         entity: light.ev1527_0dce12_04  
-      - entity: sensor.e5823_niveau_de_batterie_3
+      - entity: sensor.e5823_niveau_de_batterie_4
         name: Velo
       - entity: binary_sensor.front_door_motion
         name: Mouvement à l'entrée

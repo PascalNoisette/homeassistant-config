@@ -57,11 +57,9 @@ rflink:
   port: /dev/ttyUSB0
   ignore_devices:
     - xiron_3301_update_time
-    - baldr_3602_update_time
     - baldr_b301_update_time
     - xiron_6f01_update_time
     - xiron_0102_update_time
-    - xiron_1e03_update_time
 device_tracker:
   - platform: bbox
 

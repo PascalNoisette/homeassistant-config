@@ -3,10 +3,10 @@ title: Meteo
 icon: mdi:weather-partly-cloudy
 badges:
   - entity: sun.sun
-  - entity: sensor.baldr_3602_temp
-    name: Exterieur
   - entity: sensor.baldr_b301_temp
     name: Interieur
+  - entity: sensor.xiron_0a01_temp                            
+    name: Exterieur         
   - entity: sensor.air_pressure_template
   - entity: sensor.bordeaux_uv_2
   - type: entity-filter
@@ -15,7 +15,6 @@ badges:
     state_filter:
       - operator: "!="
         value: "Vert"
-
 
 cards:
   - type: weather-forecast
@@ -45,32 +44,26 @@ cards:
     entities:
     - sensor.particulate_matter_10_0um_concentration
     - sensor.particulate_matter_1_0um_concentration 
-    - sensor.particulate_matter_2_5um_concentration
+    - sensor.particulate_matter_2_5um_concentration 
   - type: history-graph
     entities:
-    - entity: sensor.baldr_3602_temp
-      name: Exterieur
-    - entity: sensor.baldr_3602_hum
-      name: Exterieur
     - entity: sensor.baldr_b301_temp
       name: Salon
     - entity: sensor.baldr_b301_hum
       name: Salon
-    - entity: sensor.xiron_6f01_temp
-      name: Terrasse
-    - entity: sensor.xiron_6f01_hum
-      name: Terrasse
     - entity: sensor.xiron_0102_hum
       name: Cuisine
     - entity: sensor.xiron_0102_temp
       name: Cuisine
-    - entity: sensor.xiron_1e03_temp
-      name: Canape
-    - entity: sensor.xiron_1e03_hum
-      name: Canape
     - entity: sensor.air_pressure_template
-    - sensor.baldr_b301_delta_avg
-    - sensor.baldr_3602_delta_avg
     - entity: sensor.bordeaux_temperature
       name: Météo France
-
+    - sensor.xiron_6303_temp
+    - sensor.xiron_2102_temp
+    - sensor.baldr_2902_temp
+    - entity: sensor.xiron_0a01_temp
+      name: Exterieur
+    - sensor.xiron_6303_temp
+    - sensor.mi_magic_cube_temperature
+    - sensor.window_middle_temperature
+    - sensor.window_temperature

@@ -40,11 +40,12 @@ cards:
     # - type: iframe
     #url: https://www.infoclimat.fr/infoclimat/vignette_vigi.php
     #aspect_ratio: 40%
-  - type: history-graph                                                                      
+  - type: history-graph
+    hours_to_show: 8
     entities:
     - sensor.particulate_matter_10_0um_concentration
     - sensor.particulate_matter_1_0um_concentration 
-    - sensor.particulate_matter_2_5um_concentration 
+    - sensor.particulate_matter_2_5um_concentration
     - sensor.co2
   - type: history-graph
     entities:
@@ -59,6 +60,7 @@ cards:
     - entity: sensor.air_pressure_template
     - entity: sensor.bordeaux_temperature
       name: Météo France
+    - sensor.air_bme280_pressure
     - sensor.xiron_6303_temp
     - sensor.xiron_2102_temp
     - sensor.baldr_2902_temp

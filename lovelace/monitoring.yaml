@@ -9,8 +9,10 @@ cards:
     entities:
       - sensor.sm_t800_battery_level
       - sensor.sm_t800_battery_state
+      - sensor.sm_t835_battery_level
+      - sensor.sm_t835_battery_state
       - entity: light.maclean_582f_01
-        name: Recharge SM-T800
+        name: Recharge Tablette
         icon: mdi:power-plug
       - entity: switch.on_off_plug_in_unit_5
         name: Chauffage

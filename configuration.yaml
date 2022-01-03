@@ -82,6 +82,8 @@ glances:
     name: fourth
   - host: fifth
     name: fifth
+  - host: sixth             
+    name: sixth 
 
 lovelace:
   mode: yaml

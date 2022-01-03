@@ -4,7 +4,7 @@
   value_template: "{{ value_json.state }}"
   unit_of_measurement: '%'
   headers:
-    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5YjQ5NDhiZGVmNjc0OTYxYmQ2ZWY4ZGYzNDYwY2I3YiIsImlhdCI6MTYzMTk3Mjk1NywiZXhwIjoxOTQ3MzMyOTU3fQ.9LEQjd9AlKJEQitDma1eyt5am7XtOERmYsIFWN-LqIo
+    Authorization: !secret HOME_ASSISTANT_API_VELO
 - platform: rest
   name: e5823_tracking
   resource: https://velo.netpascal.site/api/states/device_tracker.e5823
@@ -20,4 +20,4 @@
     - speed
     - vertical_accuracy
   headers:
-    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5YjQ5NDhiZGVmNjc0OTYxYmQ2ZWY4ZGYzNDYwY2I3YiIsImlhdCI6MTYzMTk3Mjk1NywiZXhwIjoxOTQ3MzMyOTU3fQ.9LEQjd9AlKJEQitDma1eyt5am7XtOERmYsIFWN-LqIo
+    Authorization: !secret HOME_ASSISTANT_API_VELO

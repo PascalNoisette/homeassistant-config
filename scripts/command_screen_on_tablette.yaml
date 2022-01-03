@@ -1,0 +1,6 @@
+command_screen_on_tablette:
+  alias: "Command Screen On Tablette"
+  sequence:
+  - service: notify.mobile_app_sm_t835
+    data:
+      message: "command_screen_on"

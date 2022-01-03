@@ -1,4 +1,4 @@
-- alias: Turn off after 1 hour
+- alias: Turn off ikea after 1 hour
   trigger:
     platform: state
     entity_id: switch.on_off_plug_in_unit_5
@@ -8,3 +8,15 @@
   action:
     service: switch.turn_off
     entity_id: switch.on_off_plug_in_unit_5
+
+- alias: Turn off lidl after 1 hour
+  trigger:
+    platform: state
+    entity_id: switch.on_off_plug_in_unit_9
+    to: 'on'
+    for:
+      hours: 1
+  action:
+    service: switch.turn_off
+    entity_id: switch.on_off_plug_in_unit_9
+

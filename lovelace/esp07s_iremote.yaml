@@ -17,11 +17,11 @@ cards:
         - type: entity-button
           name: power
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:power
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E040BF'
                 nbits: 32
@@ -29,11 +29,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:location-enter
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0807F'
                 nbits: 32
@@ -41,11 +41,11 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:television-box
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0D827'
                 nbits: 32
@@ -55,16 +55,16 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           show_icon: false
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:arrow-up
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E006F9'
                 nbits: 32
@@ -72,7 +72,7 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           show_icon: false
 
     - type: horizontal-stack
@@ -80,11 +80,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:arrow-left
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0A659'
                 nbits: 32
@@ -92,11 +92,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:check
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E016E9'
                 nbits: 32
@@ -104,11 +104,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:arrow-right
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E046B9'
                 nbits: 32
@@ -119,16 +119,16 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           show_icon: false
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:arrow-down
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E08679'
                 nbits: 32
@@ -136,7 +136,7 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           show_icon: false
 
 
@@ -145,11 +145,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-1-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E020DF'
                 nbits: 32
@@ -157,11 +157,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-2-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0A05F'
                 nbits: 32
@@ -169,11 +169,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-3-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0609F'
                 nbits: 32
@@ -183,11 +183,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-4-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E010EF'
                 nbits: 32
@@ -195,11 +195,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-5-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0906F'
                 nbits: 32
@@ -207,11 +207,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-6-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E050AF'
                 nbits: 32
@@ -221,11 +221,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-7-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E030CF'
                 nbits: 32
@@ -233,11 +233,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-8-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0B04F'
                 nbits: 32
@@ -245,11 +245,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:numeric-9-box-outline
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0708F'
                 nbits: 32
@@ -259,11 +259,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-minus
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0D02F'
                 nbits: 32
@@ -271,11 +271,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-mute
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0F00F'
                 nbits: 32
@@ -283,11 +283,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-plus
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0E01F'
                 nbits: 32
@@ -297,11 +297,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:minus
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E008F7'
                 nbits: 32
@@ -309,11 +309,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:plus-one
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E048B7'
                 nbits: 32
@@ -325,11 +325,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:keyboard-return
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E01AE5'
                 nbits: 32
@@ -337,11 +337,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:exit-run
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0B44B'
                 nbits: 32
@@ -349,11 +349,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:check-bold
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E016E9'
                 nbits: 32
@@ -361,11 +361,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:tools
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E0D22D'
                 nbits: 32
@@ -373,11 +373,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:menu
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_samsung
+            service: esphome.esp07siremote_send_samsung
             service_data:
                 data: '0xE0E058A7'
                 nbits: 32
@@ -392,11 +392,11 @@ cards:
         - type: entity-button
           name: power
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:power
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B28B649'
                 nbits: 32
@@ -404,11 +404,11 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:usb
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B287A85'
                 nbits: 32
@@ -416,11 +416,11 @@ cards:
         - type: entity-button
           name: Tv Source
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:bluetooth
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B28BA45'
                 nbits: 32
@@ -430,11 +430,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-minus
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B280AF5'
                 nbits: 32
@@ -442,11 +442,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-mute
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B287689'
                 nbits: 32
@@ -454,11 +454,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:volume-plus
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B28F20D'
                 nbits: 32
@@ -468,11 +468,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:skip-backward
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B286897'
                 nbits: 32
@@ -480,11 +480,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:play-pause
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B280EF1'
                 nbits: 32
@@ -492,11 +492,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:skip-forward
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B28A857'
                 nbits: 32
@@ -508,11 +508,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:tune
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B2852AD'
                 nbits: 32
@@ -520,11 +520,11 @@ cards:
         - type: entity-button
           name: tv
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:access-point-network
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_nec
+            service: esphome.esp07siremote_send_nec
             service_data:
                 data: '0x9B289669'
                 nbits: 32
@@ -539,11 +539,11 @@ cards:
         - type: entity-button
           name: Auto 25°
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:sync
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:
                 data: '0xB21FC8'
                 nbits: 24
@@ -551,11 +551,11 @@ cards:
         - type: entity-button
           name: Chaleur 22°
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:fire
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:
                 data: '0xB2BF7C'
                 nbits: 24
@@ -563,11 +563,11 @@ cards:
         - type: entity-button
           name: Cool 24°
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:snowflake
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:
                 data: '0xB2BF40'
                 nbits: 24
@@ -575,11 +575,11 @@ cards:
         - type: entity-button
           name: Fan
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:fan
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:
                 data: '0xB2BFE4'
                 nbits: 24
@@ -587,11 +587,11 @@ cards:
         - type: entity-button
           name: Dry
           show_name: false
-          entity: sensor.tuya_multibridge
+          entity: sensor.esp07siremote
           icon: mdi:water-percent
           tap_action:
             action: call-service
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:
                 data: '0xB21F44'
                 nbits: 24
@@ -600,11 +600,11 @@ cards:
         - type: entity-button                    
           name: power                            
           show_name: false                       
-          entity: sensor.tuya_multibridge        
+          entity: sensor.esp07siremote        
           icon: mdi:power                        
           tap_action:                                
             action: call-service                 
-            service: esphome.multibridge_send_coolix
+            service: esphome.esp07siremote_send_coolix
             service_data:                        
                 data: '0xB27BE0'               
                 nbits: 24
@@ -613,4 +613,9 @@ cards:
     entity: media_player.chromecast1919
   - type: media-control
     entity: media_player.chromecastaudio0109
-
+  - type: entities        
+    entities:                            
+    - entity: input_text.radio
+    - entity: input_select.radio_content_type
+    - entity: input_select.radio
+    - entity: input_select.radio_suggestion

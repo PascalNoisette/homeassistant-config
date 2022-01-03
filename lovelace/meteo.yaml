@@ -53,17 +53,19 @@ cards:
       name: Salon
     - entity: sensor.baldr_b301_hum
       name: Salon
-    - entity: sensor.xiron_0102_hum
+    - entity: sensor.xiron_7e02_hum
       name: Cuisine
-    - entity: sensor.xiron_0102_temp
+    - entity: sensor.xiron_7e02_temp
       name: Cuisine
     - entity: sensor.air_pressure_template
     - entity: sensor.bordeaux_temperature
       name: Météo France
     - sensor.air_bme280_pressure
     - sensor.xiron_6303_temp
-    - sensor.xiron_2102_temp
-    - sensor.baldr_2902_temp
+#    - entity: sensor.baldr_b303_temp
+#      name: Bedroom
+    - entity: sensor.baldr_2902_temp
+      name: Sous-abri
     - entity: sensor.xiron_0a01_temp
       name: Exterieur
     - sensor.xiron_6303_temp

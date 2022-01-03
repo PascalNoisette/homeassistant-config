@@ -24,7 +24,7 @@
 - alias: Baie left open
   trigger:
     platform: numeric_state
-    entity_id: sensor.xiron_0102_temp
+    entity_id: sensor.xiron_2102_temp
     below: 19
   condition:
     condition: or
@@ -36,8 +36,8 @@
     - service: notify.notify
       data:
         title: "Time to close window"
-        message: "La temperature de la cuisine est de {{ states('sensor.xiron_0102_temp') }}"
+        message: "La temperature de la cuisine est de {{ states('sensor.xiron_2102_temp') }}"
     - service: persistent_notification.create
       data:
         title: "Time to close window"
-        message: "La temperature de la cuisine est de {{ states('sensor.xiron_0102_temp') }}"
+        message: "La temperature de la cuisine est de {{ states('sensor.xiron_2102_temp') }}"

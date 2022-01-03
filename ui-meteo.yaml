@@ -10,5 +10,5 @@ views:
         entities:
         - entity: sensor.baldr_b301_temp
           name: Salon
-        - entity: sensor.xiron_0102_temp
+        - entity: sensor.xiron_7e02_temp
           name: Cuisine

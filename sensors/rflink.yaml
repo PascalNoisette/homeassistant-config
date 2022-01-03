@@ -13,6 +13,12 @@
       sensor_type: humidity
     baldr_b301_bat:
       sensor_type: battery
+    baldr_b303_temp:
+      sensor_type: temperature
+    baldr_b303_hum:
+      sensor_type: humidity
+    baldr_b303_bat:
+      sensor_type: battery
     xiron_0102_temp:
       sensor_type: temperature
     xiron_0102_hum:
@@ -24,5 +30,17 @@
     xiron_0a01_bat:
       sensor_type: battery
     xiron_0a01_hum:
+      sensor_type: humidity
+    xiron_2102_temp:
+      sensor_type: temperature
+    xiron_2102_bat:
+      sensor_type: battery
+    xiron_2102_hum:
+      sensor_type: humidity
+    xiron_6303_temp:
+      sensor_type: temperature
+    xiron_6303_bat:
+      sensor_type: battery
+    xiron_6303_hum:
       sensor_type: humidity
 

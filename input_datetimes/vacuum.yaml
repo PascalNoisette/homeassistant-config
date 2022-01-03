@@ -1,0 +1,4 @@
+dry_vacuum:                        
+  name: Dry Vacuum
+  has_date: true      
+  has_time: false     

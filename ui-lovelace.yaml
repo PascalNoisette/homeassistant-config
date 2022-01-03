@@ -4,5 +4,6 @@ views:
   - !include lovelace/meteo.yaml
   - !include lovelace/covid.yaml
   - !include lovelace/light.yaml
+  - !include lovelace/dry.yaml
   - !include lovelace/monitoring.yaml
   - !include lovelace/security.yaml

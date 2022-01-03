@@ -111,6 +111,8 @@ input_boolean: !include_dir_merge_named input_booleans
 input_number: !include_dir_merge_named input_numbers
 input_text: !include_dir_merge_named input_texts
 input_select: !include_dir_merge_named input_selects
+input_datetime: !include_dir_merge_named input_datetimes
+
 
 logger:
   default: error

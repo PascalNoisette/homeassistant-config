@@ -1,0 +1,20 @@
+- platform: template
+  sensors:
+    dry_february:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_february'))) / 86400) | int }}"
+    dry_cheese:                        
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_cheese'))) / 86400) | int }}"
+    dry_fastfood:     
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_fastfood'))) / 86400) | int }}"
+    dry_nut:      
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_nut'))) / 86400) | int }}"
+    dry_pizza:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_pizza'))) / 86400) | int }}"
+    dry_vacuum:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_vacuum'))) / 86400) | int }}"
+    dry_bathroom:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_bathroom'))) / 86400) | int }}"
+    dry_toilet:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_toilet'))) / 86400) | int }}"
+    dry_mop:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_mop'))) / 86400) | int }}"

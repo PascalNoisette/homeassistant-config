@@ -1,4 +1,4 @@
-- alias: Tablette Low
+- alias: Gps Low
   trigger:
     platform: numeric_state
     entity_id: sensor.e5823_niveau_de_batterie_4
@@ -8,3 +8,19 @@
       data:
         title: "Velo"
         message: "La batterie du velo est a {{ states('sensor.e5823_niveau_de_batterie_4') }}"
+- alias: Gps Very Low
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.e5823_niveau_de_batterie_4
+    below: 31
+  action:
+    - service: persistent_notification.create
+      data:
+        title: "Recharger GPS Velo"
+        message: "La batterie du gps velo est a {{ states('sensor.e5823_niveau_de_batterie_4') }}"
+    - service: notify.notify
+      data:
+        title: "Recharger GPS Velo"
+        message: "La batterie du gps velo est a {{ states('sensor.e5823_niveau_de_batterie_4') }}"
+
+

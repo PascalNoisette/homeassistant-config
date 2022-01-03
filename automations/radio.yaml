@@ -1,0 +1,23 @@
+- alias: 'Input radio url'
+  trigger:
+    platform: state
+    entity_id: input_text.radio
+  action:
+  - service: media_player.play_media
+    data:
+        entity_id: "{{ states('input_select.radio') }}"
+        media_content_type: "{{ states('input_select.radio_content_type') }}" 
+        media_content_id: "{{ states('input_text.radio') }}"
+
+
+- alias: 'Select radio channel suggestion'
+  trigger:
+    platform: state
+    entity_id: input_select.radio_suggestion
+  action:
+  -  service: input_text.set_value
+     data_template:
+       entity_id: input_text.radio
+       value: "http{{ states('input_select.radio_suggestion').split('http')[1] }}"
+ 
+

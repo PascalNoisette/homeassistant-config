@@ -1,0 +1,10 @@
+radio_content_type:
+  name: Radio Content type
+  initial: "music"
+  options:
+  - "music"
+  - "playlist"
+  - "video"
+  - "tvshow"
+  - "episode"
+  - "channel"

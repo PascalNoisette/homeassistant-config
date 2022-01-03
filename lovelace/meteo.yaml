@@ -45,6 +45,7 @@ cards:
     - sensor.particulate_matter_10_0um_concentration
     - sensor.particulate_matter_1_0um_concentration 
     - sensor.particulate_matter_2_5um_concentration 
+    - sensor.co2
   - type: history-graph
     entities:
     - entity: sensor.baldr_b301_temp

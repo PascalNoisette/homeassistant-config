@@ -1,0 +1,4 @@
+dry_swimming:          
+  name: Dry swimming
+  has_date: true      
+  has_time: false     

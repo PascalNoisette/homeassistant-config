@@ -116,9 +116,6 @@ input_datetime: !include_dir_merge_named input_datetimes
 
 logger:
   default: error
-  #  logs:
-  #    rflink: debug
-  #    homeassistant.components.rflink: debug
 
 media_extractor:
 

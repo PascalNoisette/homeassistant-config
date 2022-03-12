@@ -20,11 +20,9 @@ cards:
       - entity: switch.on_off_plug_in_unit_9
         name: Prise connectee Lidl
         icon: mdi:car-seat-heater
-      - sensor.h8324_niveau_de_batterie
-      - sensor.h8324_etat_de_la_batterie
-      - sensor.h8324_battery_health
-      - sensor.h8324_lieu_geocode
-      - sensor.h8324_connexion_wi_fi
+      - sensor.h8324_battery_state
+      - sensor.h8324_battery_health_2
+      - sensor.h8324_battery_level
       - sensor.h8296_battery_level
       - sensor.h8296_battery_health
       - sensor.h8296_battery_state

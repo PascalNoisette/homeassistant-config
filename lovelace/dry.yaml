@@ -4,10 +4,11 @@ path: dry
 pannel: true
 icon: mdi:cancel
 visible:
+  - user: e326af935b6f48188b4f820973e7341d
   - user: 89e84b4c25c24a689fca9b5ab7d50889
 cards:
   - type: glance
-    title: Dry
+    title: Bonnes resolutions
     show_name: false
     show_state: true
     entities:
@@ -123,4 +124,47 @@ cards:
         service: script.reset_dry_date
         service_data:        
           entity_id: "input_datetime.dry_mop"
+
+        
+  - type: glance                                  
+    title: Sport
+    show_name: true                               
+    show_state: true                              
+    entities:                                     
+    - type: entity-button                         
+      name: Roller
+      show_name: true                             
+      entity: sensor.dry_roller
+      icon: mdi:rollerblade
+      tap_action:                                 
+        action: call-service                      
+        confirmation:                             
+          text: Are you sure?                     
+        service: script.reset_dry_date            
+        service_data:                             
+          entity_id: "input_datetime.dry_roller"  
+    - type: entity-button                         
+      name: Piscine    
+      show_name: false                            
+      entity: sensor.dry_swimming
+      icon: mdi:pool
+      tap_action:                                 
+        action: call-service                      
+        confirmation:                             
+          text: Are you sure?                     
+        service: script.reset_dry_date            
+        service_data:                             
+          entity_id: "input_datetime.dry_swimming"
+    - type: entity-button                       
+      name: Fitness                        
+      show_name: false                          
+      entity: sensor.dry_fitness                 
+      icon: mdi:weight-lifter                       
+      tap_action:                               
+        action: call-service                    
+        confirmation:                           
+          text: Are you sure?                   
+        service: script.reset_dry_date          
+        service_data:                           
+          entity_id: "input_datetime.dry_fitness"
 

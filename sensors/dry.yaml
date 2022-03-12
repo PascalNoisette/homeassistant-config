@@ -18,3 +18,10 @@
       value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_toilet'))) / 86400) | int }}"
     dry_mop:
       value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_mop'))) / 86400) | int }}"
+    dry_roller:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_roller'))) / 86400) | int }}"
+    dry_fitness:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_fitness'))) / 86400) | int }}"
+    dry_swimming:
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states('input_datetime.dry_swimming'))) / 86400) | int }}"
+

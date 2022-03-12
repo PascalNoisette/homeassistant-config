@@ -61,7 +61,8 @@ cards:
     - entity: sensor.bordeaux_temperature
       name: Météo France
     - sensor.air_bme280_pressure
-    - sensor.xiron_6303_temp
+    - entity: sensor.xiron_6303_temp
+      name: Workstation
 #    - entity: sensor.baldr_b303_temp
 #      name: Bedroom
     - entity: sensor.baldr_2902_temp

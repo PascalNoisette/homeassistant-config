@@ -16,6 +16,8 @@ cards:
       - entity: light.dimmable_light_2
         name: Canape
       - entity: light.color_temperature_light_7
+        name: Living extra
+      - entity: light.color_temperature_light_10
         name: Living
       - entity: light.color_temperature_light_8
         name: Couloir

@@ -425,6 +425,22 @@ cards:
                 data: '0x9B28BA45'
                 nbits: 32
                 repeat: 2
+    - type: glance                                     
+      title: Barre Son 2  
+      show_name: false            
+      show_state: false  
+      entities:          
+        - type: button
+          name: power
+          show_name: false
+          show_state: true
+          entity: switch.on_off_plug_in_unit_7
+          icon: mdi:surround-sound-2-0
+        - type: entity-button                      
+          name: power                              
+          show_name: false                         
+          entity: switch.on_off_plug_in_unit_12 
+          icon: mdi:surround-sound-2-1
     - type: horizontal-stack
       cards:
         - type: entity-button

@@ -23,6 +23,9 @@ cards:
         name: Couloir
       - entity: light.color_light_6
         name: Boite de nuit
+      - entity: light.color_light_13
+        name: Boite de nuit 2
+
     title: Living
     show_header_toggle: true
 

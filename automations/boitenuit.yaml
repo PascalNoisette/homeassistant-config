@@ -8,11 +8,20 @@
     entity_id: light.color_light_6
     state: 'on'          
   action:
-    service: light.turn_on
-    data:
-      entity_id: light.color_light_6
-      transition: 5
-    data_template:
-      rgb_color: ['{{ "{0:d}".format(range(0, 255)|random) }}',
-                  '{{ "{0:d}".format(range(0, 255)|random) }}',
-                  '{{ "{0:d}".format(range(0, 255)|random) }}']
+    - service: light.turn_on
+      data:
+        entity_id: light.color_light_6
+        transition: 5
+      data_template:
+        rgb_color: ['{{ "{0:d}".format(range(0, 255)|random) }}',
+                    '{{ "{0:d}".format(range(0, 255)|random) }}',
+                    '{{ "{0:d}".format(range(0, 255)|random) }}']
+    - service: light.turn_on
+      data:
+        entity_id: light.color_light_13
+        transition: 5
+      data_template:
+        rgb_color: ['{{ "{0:d}".format(range(0, 255)|random) }}',
+                    '{{ "{0:d}".format(range(0, 255)|random) }}',
+                    '{{ "{0:d}".format(range(0, 255)|random) }}']
+

@@ -20,9 +20,14 @@ cards:
       - entity: switch.on_off_plug_in_unit_9
         name: Prise connectee Lidl
         icon: mdi:car-seat-heater
-      - sensor.h8324_battery_state
-      - sensor.h8324_battery_health_2
-      - sensor.h8324_battery_level
+      - sensor.j9110_battery_state
+      - sensor.j9110_battery_health
+      - sensor.j9110_battery_level
+      - sensor.j9110_geocoded_location
+      - sensor.xq_as52_battery_state
+      - sensor.xq_as52_battery_health
+      - sensor.xq_as52_battery_level
+      - sensor.xq_as52_geocoded_location
       - sensor.h8296_battery_level
       - sensor.h8296_battery_health
       - sensor.h8296_battery_state

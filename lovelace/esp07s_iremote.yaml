@@ -629,6 +629,8 @@ cards:
     entity: media_player.chromecast1919
   - type: media-control
     entity: media_player.chromecastaudio0109
+  - type: media-control           
+    entity: media_player.abri_de_jardin
   - type: entities        
     entities:                            
     - entity: input_text.radio

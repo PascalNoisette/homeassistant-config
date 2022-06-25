@@ -67,6 +67,8 @@ cards:
 #      name: Bedroom
     - entity: sensor.baldr_2902_temp
       name: Sous-abri
+    - entity: sensor.globaltronics_00ee_temp
+      name: SousleBanc
     - entity: sensor.xiron_0a01_temp
       name: Exterieur
     - sensor.xiron_6303_temp

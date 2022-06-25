@@ -11,6 +11,7 @@ badges:
       - entity: sensor.xiron_3301_bat
       - entity: sensor.xiron_2102_bat
       - entity: sensor.xiron_0a01_bat
+      - entity: sensor.globaltronics_00ee_bat
     state_filter:
       - operator: "!="
         value: "ok"

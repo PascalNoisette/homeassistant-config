@@ -43,4 +43,10 @@
       sensor_type: battery
     xiron_6303_hum:
       sensor_type: humidity
+    globaltronics_00ee_temp:
+      sensor_type: temperature
+    globaltronics_00ee_hum:
+      sensor_type: humidity
+    globaltronics_00ee_bat:
+      sensor_type: battery
 

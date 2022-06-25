@@ -60,6 +60,7 @@ rflink:
     - baldr_b301_update_time
     - xiron_6f01_update_time
     - xiron_0102_update_time
+    - globaltronics_00ee_update_time
 device_tracker:
   - platform: bbox
 
@@ -114,8 +115,6 @@ input_select: !include_dir_merge_named input_selects
 input_datetime: !include_dir_merge_named input_datetimes
 
 
-logger:
-  default: error
 
 media_extractor:
 
@@ -130,6 +129,8 @@ camera:
     file_path: /stick/gif_from_jpg_camera.gif
     scan_interval: 10
 
+logger:
+  default: error
 
 # Example configuration.yaml entry
 #google_assistant:

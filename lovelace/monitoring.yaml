@@ -9,8 +9,8 @@ cards:
     entities:
       - sensor.sm_t800_battery_level
       - sensor.sm_t800_battery_state
-      - sensor.sm_t835_battery_level
-      - sensor.sm_t835_battery_state
+      - sensor.sm_t835_battery_level_2
+      - sensor.sm_t835_battery_state_2
       - entity: light.maclean_582f_01
         name: Recharge Tablette
         icon: mdi:power-plug
@@ -45,36 +45,49 @@ cards:
     entities:
     - entity: sensor.first_etc_hosts_used_percent
     - entity: sensor.second_etc_hosts_used_percent
-    - entity: sensor.third_etc_hosts_used_percent
-    - entity: sensor.nas_used_percent
-    - entity: sensor.sixth_used_percent
-    - entity: sensor.gateway_media_saumon_used_percent
+    - entity: sensor.gateway_media_data_used_percent
     - entity: sensor.jitsi_etc_hosts_used_percent
-    - entity: sensor.gateway_used_percent
-    - entity: sensor.mail_used_percent
-    - entity: sensor.fourth_used_percent
-    - entity: sensor.fifth_used_percent
+    - entity: sensor.hass_etc_hosts_used_percent
+    - entity: sensor.tvhead_etc_hosts_used_percent
+    - entity: sensor.gateway_used_percent_2
 
   - type: history-graph
     title: Swap
     entities:
-    - entity: sensor.gateway_swap_used_percent
-    - entity: sensor.gateway_ram_used_percent
+    - entity: sensor.gateway_swap_used_percent_2
+    - entity: sensor.gateway_ram_used_percent_2
 
   - type: history-graph
     title: Ram
     entities:
-    - entity: sensor.first_containers_ram_used
-    - entity: sensor.second_containers_ram_used
-    - entity: sensor.third_containers_ram_used
-    - entity: sensor.jitsi_containers_ram_used
-    - entity: sensor.mail_containers_ram_used
-    - entity: sensor.fourth_containers_ram_used
-    - entity: sensor.fifth_containers_ram_used
-    - entity: sensor.sixth_containers_ram_used
+    - entity: sensor.first_memory_usage
+    - entity: sensor.first_memory_swap_usage
+    - entity: sensor.second_memory_usage
+    - entity: sensor.second_memory_swap_usage
+    - entity: sensor.tvhead_memory_usage
+    - entity: sensor.tvhead_memory_swap_usage
+    - entity: sensor.hass_memory_usage
+    - entity: sensor.hass_memory_swap_usage
+    - entity: sensor.jitsi_memory_usage
+    - entity: sensor.jitsi_memory_swap_usage
+
+
+  - type: history-graph
+    title: Network
+    entities:
+    - entity: sensor.first_network_eth0_bytes_received
+    - entity: sensor.first_network_eth1_bytes_received
+    - entity: sensor.second_network_eth0_bytes_received
+    - entity: sensor.second_network_eth1_bytes_received
+    - entity: sensor.tvhead_network_eth0_bytes_received
+    - entity: sensor.tvhead_network_eth1_bytes_received
+    - entity: sensor.hass_network_eth0_bytes_received
+    - entity: sensor.hass_network_eth1_bytes_received
+    - entity: sensor.jitsi_network_eth0_bytes_received
+    - entity: sensor.jitsi_network_eth1_bytes_received
 
   - type: history-graph                           
     title: Load 
     entities:                                    
-    - entity: sensor.gateway_cpu_load
+    - entity: sensor.gateway_cpu_load_2
 

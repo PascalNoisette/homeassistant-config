@@ -544,7 +544,104 @@ cards:
           name: power                              
           show_name: false                         
           entity: switch.on_off_plug_in_unit_12    
-          icon: mdi:surround-sound-2-1   
+          icon: mdi:surround-sound-2-1
+        - type: entity-button
+          name: Tv Source
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:access-point-network
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x00002B0C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Analog Source
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:laptop
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x000E8114'
+                nbits: 20
+                repeat: 2
+        - type: entity-button
+          name: Bluetooth Source
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:bluetooth
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x0008E114'
+                nbits: 20
+                repeat: 2
+        - type: entity-button
+          name: Subwoofer moins
+          show_name: false
+          tooltip: Subwoofer
+          entity: sensor.esp07siremote
+          icon: mdi:volume-medium
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x00005D0C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Volume moins
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:volume-minus
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x0000640C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Mute Volume
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:volume-off
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x0000140C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Volume plus
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:volume-plus
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x0000240C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Subwoofer Plus
+          show_name: false
+          entity: sensor.esp07siremote
+          icon: mdi:volume-high
+          tap_action:
+            action: call-service
+            service: esphome.esp07siremote_send_sony
+            service_data:
+                data: '0x00001D0C'
+                nbits: 15
+                repeat: 2
   - type: vertical-stack                             
     cards:                                           
     - type: glance                                   

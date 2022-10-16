@@ -1,0 +1,10 @@
+- alias: Velo en mouvement
+  trigger:
+    - platform: state
+      entity_id: sensor.e5823_activite_detectee
+      from: 'still'
+  action:
+    - service: notify.notify
+      data:
+        title: "Velo en mouvement"
+        message: "Le velo est en mouvement"

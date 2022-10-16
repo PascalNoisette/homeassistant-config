@@ -34,7 +34,7 @@
   initial_state: 'on'
   condition:
     - condition: template
-      value_template: "{{ state_attr('light.color_temperature_light_7', 'color_temp') | int > 230 }}"
+      value_template: "{{ state_attr('light.color_temperature_light_10', 'color_temp') | int > 230 }}"
   trigger:
     - platform: event
       event_type: deconz_event
@@ -56,8 +56,9 @@
       event_data: 
         id: tradfri_remote_control_4
         event: 4002
+
   action:
     - service: light.turn_on
-      entity_id: light.color_temperature_light_7
+      entity_id: light.color_temperature_light_10
       data_template:
-        color_temp: "{{state_attr('light.color_temperature_light_7', 'color_temp') | int - 50 }}"
+        color_temp: "{{state_attr('light.color_temperature_light_10', 'color_temp') | int - 50 }}"

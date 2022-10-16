@@ -31,6 +31,7 @@ http:
   base_url: home.netpascal.site
   use_x_forwarded_for: true
   trusted_proxies:
+   - 10.147.144.1
    - 10.249.107.164
    - 127.0.0.1
    - ::1
@@ -64,27 +65,6 @@ rflink:
 device_tracker:
   - platform: bbox
 
-glances:
-  - host: first
-    name: first
-  - host: second
-    name: second
-  - host: third
-    name: third
-  - host: jitsi
-    name: jitsi
-  - host: nas
-    name: nas
-  - host: 10.249.107.1
-    name: gateway
-  - host: mail
-    name: mail
-  - host: fourth
-    name: fourth
-  - host: fifth
-    name: fifth
-  - host: sixth             
-    name: sixth 
 
 lovelace:
   mode: yaml
@@ -113,6 +93,7 @@ input_number: !include_dir_merge_named input_numbers
 input_text: !include_dir_merge_named input_texts
 input_select: !include_dir_merge_named input_selects
 input_datetime: !include_dir_merge_named input_datetimes
+rest: !include_dir_merge_list http_rest
 
 
 
@@ -128,6 +109,10 @@ camera:
     name: gif_from_jpg_camera
     file_path: /stick/gif_from_jpg_camera.gif
     scan_interval: 10
+
+mqtt:
+  broker: mqtt.netpascal.site
+  discovery: true
 
 logger:
   default: error

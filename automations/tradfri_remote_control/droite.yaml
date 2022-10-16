@@ -54,9 +54,9 @@
         event: 5002
   condition:
     - condition: template
-      value_template: "{{ state_attr('light.color_temperature_light_7', 'color_temp') | int < 500 }}"
+      value_template: "{{ state_attr('light.color_temperature_light_10', 'color_temp') | int < 500 }}"
   action:
     - service: light.turn_on
-      entity_id: light.color_temperature_light_7
+      entity_id: light.color_temperature_light_10
       data_template:
-        color_temp: "{{state_attr('light.color_temperature_light_7', 'color_temp') | int + 50 }}"
+        color_temp: "{{state_attr('light.color_temperature_light_10', 'color_temp') | int + 50 }}"

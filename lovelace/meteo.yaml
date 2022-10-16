@@ -3,7 +3,7 @@ title: Meteo
 icon: mdi:weather-partly-cloudy
 badges:
   - entity: sun.sun
-  - entity: sensor.baldr_b301_temp
+  - entity: sensor.xiron_3703_temp
     name: Interieur
   - entity: sensor.xiron_0a01_temp                            
     name: Exterieur         
@@ -29,7 +29,7 @@ cards:
     url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
     aspect_ratio: 50%
   - type: iframe
-    url: https://www.atmo-nouvelleaquitaine.org/widget/monair/commune/33063
+    url: https://aqicn.org/city/france/aquitaine/bordeaux/bastide/fr/m/
     aspect_ratio: 85%
   - type: picture
     image: https://www.pollens.fr/generated/vigilance_map.png
@@ -49,9 +49,9 @@ cards:
     - sensor.co2
   - type: history-graph
     entities:
-    - entity: sensor.baldr_b301_temp
+    - entity: sensor.xiron_3703_temp
       name: Salon
-    - entity: sensor.baldr_b301_hum
+    - entity: sensor.xiron_3703_hum
       name: Salon
     - entity: sensor.xiron_7e02_hum
       name: Cuisine
@@ -61,17 +61,16 @@ cards:
     - entity: sensor.bordeaux_temperature
       name: Météo France
     - sensor.air_bme280_pressure
-    - entity: sensor.xiron_6303_temp
-      name: Workstation
-#    - entity: sensor.baldr_b303_temp
-#      name: Bedroom
+    - entity: sensor.baldr_2401_temp
+      name: Bedroom
     - entity: sensor.baldr_2902_temp
       name: Sous-abri
-    - entity: sensor.globaltronics_00ee_temp
+    - entity: sensor.globaltronics_0086_temp
       name: SousleBanc
     - entity: sensor.xiron_0a01_temp
       name: Exterieur
-    - sensor.xiron_6303_temp
+    - entity: sensor.xiron_6303_temp
+      name: Cuisine
     - sensor.mi_magic_cube_temperature
     - sensor.window_middle_temperature
     - sensor.window_temperature

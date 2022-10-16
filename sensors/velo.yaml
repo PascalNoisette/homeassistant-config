@@ -1,13 +1,19 @@
 - platform: rest
   name: e5823_niveau_de_batterie
-  resource: https://velo.netpascal.site/api/states/sensor.e5823_niveau_de_batterie
+  resource: https://velo.netpascal.site/api/states/sensor.e5823_battery_level
   value_template: "{{ value_json.state }}"
   unit_of_measurement: '%'
   headers:
     Authorization: !secret HOME_ASSISTANT_API_VELO
 - platform: rest
+  name: e5823_activite_detectee
+  resource: https://velo.netpascal.site/api/states/sensor.e5823_detected_activity
+  value_template: "{{ value_json.state }}"
+  headers:
+    Authorization: !secret HOME_ASSISTANT_API_VELO
+- platform: rest
   name: e5823_tracking
-  resource: https://velo.netpascal.site/api/states/device_tracker.e5823
+  resource: https://velo.netpascal.site/api/states/device_tracker.e5823_2
   value_template: "{{ value_json.state }}"
   json_attributes_path: "$.attributes"
   json_attributes:

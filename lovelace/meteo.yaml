@@ -1,76 +1,34 @@
-path: meteo
 title: Meteo
-icon: mdi:weather-partly-cloudy
-badges:
-  - entity: sun.sun
-  - entity: sensor.xiron_3703_temp
-    name: Interieur
-  - entity: sensor.xiron_0a01_temp                            
-    name: Exterieur         
-  - entity: sensor.air_pressure_template
-  - entity: sensor.bordeaux_uv_2
-  - type: entity-filter
-    entities:
-      - entity: sensor.33_weather_alert
-    state_filter:
-      - operator: "!="
-        value: "Vert"
-
-cards:
-  - type: weather-forecast
-    entity: weather.bordeaux_2
-    #- type: iframe
-    #  url: https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance
-    #  aspect_ratio: 27%
-  - type: entities
-    entities:
-      - entity: sensor.bordeaux_next_rain_2
-  - type: iframe
-    url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
-    aspect_ratio: 50%
-  - type: iframe
-    url: https://aqicn.org/city/france/aquitaine/bordeaux/bastide/fr/m/
-    aspect_ratio: 85%
-  - type: picture
-    image: https://www.pollens.fr/generated/vigilance_map.png
-    title: Pollen
-    tap_action:
-      action: url
-      url_path: https://www.pollens.fr/
-    # - type: iframe
-    #url: https://www.infoclimat.fr/infoclimat/vignette_vigi.php
-    #aspect_ratio: 40%
-  - type: history-graph
-    hours_to_show: 8
-    entities:
-    - sensor.particulate_matter_10_0um_concentration
-    - sensor.particulate_matter_1_0um_concentration 
-    - sensor.particulate_matter_2_5um_concentration
-    - sensor.co2
-  - type: history-graph
-    entities:
-    - entity: sensor.xiron_3703_temp
-      name: Salon
-    - entity: sensor.xiron_3703_hum
-      name: Salon
-    - entity: sensor.xiron_7e02_hum
-      name: Cuisine
-    - entity: sensor.xiron_7e02_temp
-      name: Cuisine
-    - entity: sensor.air_pressure_template
-    - entity: sensor.bordeaux_temperature
-      name: Météo France
-    - sensor.air_bme280_pressure
-    - entity: sensor.baldr_2401_temp
-      name: Bedroom
-    - entity: sensor.baldr_2902_temp
-      name: Sous-abri
-    - entity: sensor.globaltronics_0086_temp
-      name: SousleBanc
-    - entity: sensor.xiron_0a01_temp
-      name: Exterieur
-    - entity: sensor.xiron_6303_temp
-      name: Cuisine
-    - sensor.mi_magic_cube_temperature
-    - sensor.window_middle_temperature
-    - sensor.window_temperature
+views:
+  - title: Meteo
+    badges:
+      - sensor.bordeaux_uv
+      - sensor.xiron_6602_bat
+      - sensor.xiron_6901_bat
+      - sensor.baldr_5602_bat
+      - sensor.33_weather_alert
+    cards:
+      - type: weather-forecast
+        entity: weather.bordeaux
+      - type: iframe
+        url: https://www.meteo-biarritz.com/rain-map?zoom=7&lat=44.83000&lon=-0.57000&showTitle=1
+        aspect_ratio: 50%
+      - type: iframe
+        url: https://aqicn.org/city/france/aquitaine/bordeaux/bastide/fr/m/
+        aspect_ratio: 85%
+      - type: picture
+        image: https://www.pollens.fr/generated/vigilance_map.png
+        title: Pollen
+        tap_action:
+          action: url
+          url_path: https://www.pollens.fr/
+      - type: history-graph
+        hours_to_show: 8
+        entities:
+        - sensor.airquality_35_pm25
+        - sensor.airquality_37_pm25
+        - sensor.xiron_6602_temp
+        - sensor.xiron_6901_temp
+        - sensor.baldr_5602_temp
+        - sensor.auriol_00ee_temp
+    

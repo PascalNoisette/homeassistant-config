@@ -1,130 +1,56 @@
 
-# Configure a default setup of Home Assistant (frontend, api, etc)
-#default_config:
-config:
-#
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
 frontend:
-#
-history:
-#
-image:
-#
-logbook:
-#
-media_source:
-#
-mobile_app:
-#
-ssdp:        
-#
-sun:
-#
-system_health:
-#
-tag:
-#
-zeroconf:
-  default_interface: true
-  ipv6: false
-# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-http:
-  base_url: home.netpascal.site
-  use_x_forwarded_for: true
-  trusted_proxies:
-   - 10.147.144.1
-   - 10.249.107.164
-   - 127.0.0.1
-   - ::1
+  themes: !include_dir_merge_named themes
 
-# Text to speech
-tts:
-  - platform: google_translate
-
-# loaded by default config required for snapshot
-stream:
-
-homeassistant:
-  allowlist_external_dirs:
-    - "/stick"
-    - "/tmp"
-
-
-group: !include groups.yaml
-automation: !include_dir_merge_list automations
-scene: !include_dir_merge_list scenes
-script: !include_dir_merge_named scripts
-
-rflink:
-  port: /dev/ttyUSB0
-  ignore_devices:
-    - xiron_3301_update_time
-    - baldr_b301_update_time
-    - xiron_6f01_update_time
-    - xiron_0102_update_time
-    - globaltronics_00ee_update_time
-device_tracker:
-  - platform: bbox
-
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
 
 lovelace:
-  mode: yaml
+  mode: storage
   dashboards:
-    lovelace-meteo: # Needs to contain a hyphen (-)
+    lovelace-remote:
       mode: yaml
-      filename: ui-meteo.yaml
+      title: Remote
+      icon: mdi:remote
+      show_in_sidebar: true
+      filename: lovelace/esp07s_iremote.yaml
+    lovelace-light:
+      mode: yaml
+      title: Light
+      icon: mdi:lightbulb
+      show_in_sidebar: true
+      filename: lovelace/light.yaml
+    lovelace-meteo:
+      mode: yaml
       title: Meteo
       icon: mdi:weather-partly-cloudy
       show_in_sidebar: true
-      require_admin: true
-    lovelace-map: # Needs to contain a hyphen (-)
-      mode: yaml
-      filename: ui-map.yaml
-      title: Map
-      icon: mdi:google-maps
-      show_in_sidebar: true
-      require_admin: true
+      filename: lovelace/meteo.yaml
+
+
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+   - 10.195.236.1
+   - 192.168.1.36
+   - 192.168.1.51
+   - 127.0.0.1
+   - ::1
+
+rflink:
+  port: /dev/ttyUSB0
 
 light: !include_dir_merge_list lights
 sensor: !include_dir_merge_list sensors
-binary_sensor: !include_dir_merge_list binary_sensors
-switch: !include_dir_merge_list switches
-input_boolean: !include_dir_merge_named input_booleans
-input_number: !include_dir_merge_named input_numbers
-input_text: !include_dir_merge_named input_texts
-input_select: !include_dir_merge_named input_selects
-input_datetime: !include_dir_merge_named input_datetimes
-rest: !include_dir_merge_list http_rest
 
-
-
-media_extractor:
-
-shell_command:
-  rclone_camera_pic: "curl http://first:3000/api/execute/5282338206185974"
-  make_gif_with_last_pic: "curl http://first:3000/api/execute/3046983785639610"
-
-
-camera:
-  - platform: local_file
-    name: gif_from_jpg_camera
-    file_path: /stick/gif_from_jpg_camera.gif
-    scan_interval: 10
-
-mqtt:
-  broker: mqtt.netpascal.site
-  discovery: true
-
-logger:
-  default: error
-
-# Example configuration.yaml entry
-#google_assistant:
-#  project_id: smarthome-4b89e 
-#  service_account: !include smarthome-a56cd02dc1d3.json
-#  report_state: true
-#  expose_by_default: true
-#  entity_config:
-#    switch.gt_9000_rf1_power_button:
-#      name: lumiere_cuisine
-#
-#
+#logger:
+#  default: error
+#  logs:
+#    rflink: debug
+#    homeassistant.components.rflink: debug

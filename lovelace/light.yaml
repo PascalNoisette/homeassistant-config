@@ -1,81 +1,25 @@
 title: Light
-id: light
-path: light
-pannel: true
-icon: mdi:lightbulb
-visible:
-  - user: e326af935b6f48188b4f820973e7341d                                
-  - user: 89e84b4c25c24a689fca9b5ab7d50889  
-cards:
-  - type: entities
-    entities:
-      - entity: light.maclean_582f_02
-        name: Bedroom
-      - entity: light.maclean_582f_03
-        name: Desk
-      - entity: light.dimmable_light_2
-        name: Canape
-      - entity: light.color_temperature_light_7
-        name: Living extra
-      - entity: light.color_temperature_light_10
-        name: Living
-      - entity: light.color_temperature_light_8
-        name: Couloir
-      - entity: light.color_light_6
-        name: Boite de nuit
-      - entity: light.color_light_13
-        name: Boite de nuit 2
-
-    title: Living
-    show_header_toggle: true
-
-  - type: entities
-    entities:
-      - entity: light.unitec_2be2_01
-        name: Kitchen table
-      - entity: light.unitec_2be2_02
-        name: Machine a laver
-      - entity: light.color_temperature_light_4
-        name: Cuisine
-      - entity: light.dimmable_light_3
-        name: Couloir
-    title: Kitchen
-
-  - type: glance
-    title: Theater
-    show_name: false
-    show_state: false
-    entities:
-    - type: entity-button
-      name: Theater
-      show_name: false
-      entity: scene.theater
-      tap_action:
-        action: call-service
-        service: scene.turn_on
-        service_data:
-          entity_id: scene.theater
-          transition: 2.5
-    - type: entity-button                                                                                                                                                           
-      name: Max Light                                                                                                                                                         
-      show_name: false                                                                                                                                                              
-      entity: scene.max_light
-      tap_action:                                                                                                                                                                   
-        action: call-service                                                                                                                                                        
-        service: scene.turn_on                                                                                                                                                      
-        service_data:                                                                                                                                                               
-          entity_id: scene.max_light
-          transition: 2.5 
-    - type: entity-button                                                                                                                                                           
-      name: Boite de nuit
-      entity: automation.boite_de_nuit
-      tap_action:
-        action: call-service
-        service: automation.turn_on
-        service_data:
-          entity_id: automation.boite_de_nuit
-      hold_action:                                                                                                                                                                   
-        action: call-service                                                                                                                                                        
-        service: automation.turn_off                                                                                                                                                
-        service_data:                                                                                                                                                               
-          entity_id: automation.boite_de_nuit                                                                                                                                       
+views:
+  - title: Light
+    cards:
+      - type: entities
+        entities:
+          - entity: light.color_temperature_light_18
+            name: Lampadaire industrielle chambre
+          - entity: light.color_temperature_light_8
+            name: Lampe de bureau
+          - entity: light.dimmable_light_3
+            name: Lampe cuisine
+          - entity: light.dimmable_light_2
+            name: Lampe bedroom
+    
+    
+        title: Ampoules
+        show_header_toggle: true
+      - type: entities
+        entities:
+        - entity: light.color_temperature_light_4
+        - entity: light.color_temperature_light_17
+        - entity: light.color_temperature_light_11
+        title: Salon
+    

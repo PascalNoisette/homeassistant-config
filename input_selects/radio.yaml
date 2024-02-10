@@ -1,7 +1,0 @@
-radio:
-  name: Radio
-  initial: "media_player.chromecastaudio0109"
-  options:
-  - "media_player.chromecast1919"
-  - "media_player.chromecastaudio0109"
-  - "media_player.abri_de_jardin"

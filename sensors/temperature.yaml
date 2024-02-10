@@ -1,6 +1,0 @@
-- platform: template
-  sensors:
-    air_pressure_template:
-      friendly_name: 'Air Pressure'
-      value_template: "{{ state_attr('weather.home','pressure') | default('1013') }}"
-      unit_of_measurement: hPa

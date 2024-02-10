@@ -6,7 +6,6 @@ home-assistant.log.fault
 home-assistant.log.1
 home-assistant.log
 .storage/
-.HA_VERSION
 blueprints/
 automations.yaml
 scenes.yaml

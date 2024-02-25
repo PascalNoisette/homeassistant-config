@@ -18,7 +18,7 @@ lovelace:
       title: Remote
       icon: mdi:remote
       show_in_sidebar: true
-      filename: lovelace/esp07s_iremote.yaml
+      filename: lovelace/remote.yaml
     lovelace-light:
       mode: yaml
       title: Light

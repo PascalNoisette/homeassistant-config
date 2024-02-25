@@ -7,6 +7,8 @@ views:
       - sensor.xiron_6901_bat
       - sensor.baldr_5602_bat
       - sensor.33_weather_alert
+      - entity: light.ev1527_03c652_05
+        name: Fuite
     cards:
       - type: weather-forecast
         entity: weather.bordeaux

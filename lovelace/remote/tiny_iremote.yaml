@@ -1,0 +1,302 @@
+title: Chambre
+cards:
+  - type: vertical-stack
+    cards:
+    - type: glance
+      title: TV
+      show_name: false
+      show_state: false
+      entities:
+        - type: entity-button
+          name: power
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:power
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00EB14'
+                nbits: 32
+                repeat: 1
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          show_icon: false
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:arrow-up
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00FC03'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          show_icon: false
+
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:arrow-left
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00F10E'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:check
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00F807'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:arrow-right
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00E51A'
+                nbits: 32
+                repeat: 1
+
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          show_icon: false
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:arrow-down
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00FD02'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          show_icon: false
+    - type: horizontal-stack
+      cards:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-minus
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00A758'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-mute
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00FE01'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-plus
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00F40B'
+                nbits: 32
+                repeat: 1
+    - type: glance
+      show_name: false
+      show_state: false
+      entities:
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:keyboard-return
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00A35C'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:menu
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00EC13'
+                nbits: 32
+                repeat: 1
+        - type: entity-button
+          name: tv
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:exit-run
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_nec
+            service_data:
+                data: '0xFF00B748'
+                nbits: 32
+                repeat: 1
+  - type: vertical-stack
+    cards:
+    - type: glance                                     
+      title: Barre Son
+      show_name: false                                 
+      show_state: false                                
+      entities:                                        
+        - type: button                                 
+          name: power                                  
+          show_name: false                             
+          show_state: true                             
+          entity: switch.on_off_plug_in_unit_7         
+          icon: mdi:surround-sound-2-0                 
+        - type: entity-button                      
+          name: power                              
+          show_name: false                         
+          entity: switch.on_off_plug_in_unit_12    
+          icon: mdi:surround-sound-2-1
+        - type: entity-button
+          name: Tv Source
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:access-point-network
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x00002B0C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Analog Source
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:laptop
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x000E8114'
+                nbits: 20
+                repeat: 2
+        - type: entity-button
+          name: Bluetooth Source
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:bluetooth
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x0008E114'
+                nbits: 20
+                repeat: 2
+        - type: entity-button
+          name: Subwoofer moins
+          show_name: false
+          tooltip: Subwoofer
+          entity: sensor.tinyremote
+          icon: mdi:volume-medium
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x00005D0C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Volume moins
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-minus
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x0000640C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Mute Volume
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-off
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x0000140C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Volume plus
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-plus
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x0000240C'
+                nbits: 15
+                repeat: 2
+        - type: entity-button
+          name: Subwoofer Plus
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:volume-high
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x00001D0C'
+                nbits: 15
+                repeat: 2

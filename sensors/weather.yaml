@@ -1,0 +1,7 @@
+- platform: template
+  sensors:
+    bordeaux_temperature_template:
+      friendly_name: 'Dehors'
+      unit_of_measurement: "°C"
+      value_template: '{{state_attr("weather.bordeaux","temperature") | float(0) }}'
+      device_class: temperature

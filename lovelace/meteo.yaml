@@ -9,6 +9,8 @@ views:
       - sensor.33_weather_alert
       - entity: light.ev1527_03c652_05
         name: Fuite
+      - entity: light.ev1527_099d17_06
+        name: Smoke
     cards:
       - type: weather-forecast
         entity: weather.bordeaux
@@ -32,5 +34,6 @@ views:
         - sensor.xiron_6602_temp
         - sensor.xiron_6901_temp
         - sensor.baldr_5602_temp
-        - sensor.auriol_00ee_temp
+        - sensor.xiron_3703_temp
+        - sensor.bordeaux_temperature_template
     

@@ -192,12 +192,6 @@ cards:
       show_name: false                                 
       show_state: false                                
       entities:                                        
-        - type: button                                 
-          name: power                                  
-          show_name: false                             
-          show_state: true                             
-          entity: switch.on_off_plug_in_unit_7         
-          icon: mdi:surround-sound-2-0                 
         - type: entity-button                      
           name: power                              
           show_name: false                         
@@ -216,6 +210,19 @@ cards:
                 nbits: 15
                 repeat: 2
         - type: entity-button
+          name: USB
+          show_name: false
+          entity: sensor.tinyremote
+          icon: mdi:usb
+          tap_action:
+            action: call-service
+            service: esphome.tinyremote_send_sony
+            service_data:
+                data: '0x000E8114'
+                nbits: 20
+                repeat: 2
+
+        - type: entity-button
           name: Analog Source
           show_name: false
           entity: sensor.tinyremote
@@ -224,8 +231,8 @@ cards:
             action: call-service
             service: esphome.tinyremote_send_sony
             service_data:
-                data: '0x000E8114'
-                nbits: 20
+                data: '0x00001B0C'
+                nbits: 15
                 repeat: 2
         - type: entity-button
           name: Bluetooth Source

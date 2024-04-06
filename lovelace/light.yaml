@@ -21,5 +21,9 @@ views:
         - entity: light.color_temperature_light_4
         - entity: light.color_temperature_light_17
         - entity: light.color_temperature_light_11
+        - entity: light.color_temperature_light_10
+        - entity: switch.on_off_plug_in_unit_7
+          icon: mdi:lightbulb
+          state_color: true
         title: Salon
     

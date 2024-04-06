@@ -1,2 +1,6 @@
 - platform: rflink
-  automatic_add: true
+  automatic_add: false
+  devices:
+    ev1527_03c652_05: {}
+    ev1527_099d17_06: {}
+

@@ -1,2 +1,26 @@
 - platform: rflink
-  automatic_add: true
+  automatic_add: false
+  devices:
+    xiron_3301_temp:
+      sensor_type: temperature
+    baldr_5602_temp:
+      sensor_type: temperature
+    xiron_3703_temp:
+      sensor_type: temperature
+    xiron_6602_temp:
+      sensor_type: temperature
+    xiron_6901_temp:
+      sensor_type: temperature
+    xiron_1e01_temp:
+      sensor_type: temperature
+    globaltronics_0056_temp:
+      sensor_type: temperature
+    auriol_0056_temp:
+      sensor_type: temperature
+    baldr_5602_bat:
+      sensor_type: battery
+    xiron_6602_bat:
+      sensor_type: battery
+    xiron_6901_bat:
+      sensor_type: battery
+

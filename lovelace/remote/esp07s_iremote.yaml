@@ -618,7 +618,7 @@ cards:
 - type: vertical-stack
   cards:
     - type: media-control
-      entity: media_player.chambre_parentale
+      entity: media_player.salon
       name: Google TV
     - square: false
       columns: 3
@@ -638,7 +638,7 @@ cards:
             data:
               command: DPAD_UP
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -655,7 +655,7 @@ cards:
             data:
               command: DPAD_LEFT
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -666,7 +666,7 @@ cards:
             data:
               command: DPAD_CENTER
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
@@ -674,7 +674,7 @@ cards:
               command: DPAD_CENTER
               hold_secs: 0.5
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
         - type: button
           icon: mdi:arrow-right-bold
           tap_action:
@@ -683,7 +683,7 @@ cards:
             data:
               command: DPAD_RIGHT
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -694,7 +694,7 @@ cards:
             data:
               command: BACK
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
@@ -702,7 +702,7 @@ cards:
               command: BACK
               hold_secs: 0.5
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
         - type: button
           icon: mdi:arrow-down-bold
           tap_action:
@@ -711,7 +711,7 @@ cards:
             data:
               command: DPAD_DOWN
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -722,7 +722,7 @@ cards:
             data:
               command: HOME
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
@@ -730,7 +730,7 @@ cards:
               command: HOME
               hold_secs: 0.5
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
     - square: false
       columns: 3
       type: grid
@@ -743,14 +743,14 @@ cards:
             data:
               command: MEDIA_PREVIOUS
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
             data:
               command: MEDIA_REWIND
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
         - type: button
           icon: mdi:play-pause
           tap_action:
@@ -759,14 +759,14 @@ cards:
             data:
               command: MEDIA_PLAY_PAUSE
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
             data:
               command: MEDIA_STOP
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
         - type: button
           icon: mdi:skip-next
           tap_action:
@@ -775,14 +775,14 @@ cards:
             data:
               command: MEDIA_NEXT
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: call-service
             service: remote.send_command
             data:
               command: MEDIA_FAST_FORWARD
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
         - type: button
           icon: mdi:volume-off
           tap_action:
@@ -791,7 +791,7 @@ cards:
             data:
               command: MUTE
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -802,7 +802,7 @@ cards:
             data:
               command: VOLUME_DOWN
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -813,7 +813,7 @@ cards:
             data:
               command: VOLUME_UP
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
     - square: false
@@ -828,7 +828,7 @@ cards:
             data:
               activity: https://www.youtube.com
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: button
@@ -839,7 +839,7 @@ cards:
             data:
               activity: https://www.netflix.com/title
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: picture
@@ -851,7 +851,7 @@ cards:
             data:
               activity: https://app.primevideo.com
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
         - type: picture
@@ -863,7 +863,7 @@ cards:
             data:
               activity: https://www.disneyplus.com
             target:
-              entity_id: remote.chambre_parentale
+              entity_id: remote.salon
           hold_action:
             action: none
   
